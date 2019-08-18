@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "My Site",
-    "currentPage": "page1.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -60,8 +60,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "George JJTA Hayward, Opt. • Data Scientist",
+        "meta_descr": "Online repository of George John Jordan Thomas Aquinas Hayward, Optimist's  selected data science projects. SQL is his love language.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
