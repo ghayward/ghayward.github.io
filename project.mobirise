@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "My Site",
+    "name": "Hayward Data Science",
     "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
@@ -55,7 +55,9 @@
     "versionFirst": "4.7.6",
     "uniqCompNum": 13,
     "versionPublish": "4.10.7",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "favicon": "",
+    "noImageResize": ""
   },
   "pages": {
     "index.html": {
