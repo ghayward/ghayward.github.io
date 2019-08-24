@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Hayward Data Science",
-    "currentPage": "index.html",
+    "currentPage": "projects.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -65,7 +65,7 @@
       "settings": {
         "main": true,
         "title": "George JJTA Hayward, Opt. • Data Scientist",
-        "meta_descr": "Online repository of George John Jordan Thomas Aquinas Hayward, Optimist's  selected data science projects. SQL is his love language.",
+        "meta_descr": "Online repository of Data Scientist George John Jordan Thomas Aquinas Hayward, Optimist's  selected data science projects. SQL is his love language.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
@@ -510,10 +510,10 @@
         }
       ]
     },
-    "page1.html": {
+    "projects.html": {
       "settings": {
-        "meta_descr": "Website Builder Description",
-        "title": "Projects",
+        "meta_descr": "A fine collection of some of George John Jordan Thomas Aquinas Hayward, Optimist's favorte data science projects. ",
+        "title": "Hayward Data Science Projects",
         "order": 1
       },
       "components": [
