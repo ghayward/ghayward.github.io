@@ -2208,8 +2208,8 @@ body {
   color: #ff3366 !important;
 }
 .cid-rzuTPcfRXF {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 75px;
+  padding-bottom: 60px;
   background-color: #ffffff;
 }
 .cid-rzuTPcfRXF h2 {
@@ -2251,6 +2251,7 @@ body {
     margin: 1rem 0 0 0;
   }
 }
+
 @media (max-width: 767px) {
   .cid-rzuTPcfRXF .card-wrapper .card-box .bottom-line {
     width: 100%;
