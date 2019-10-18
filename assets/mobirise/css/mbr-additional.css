@@ -2256,8 +2256,6 @@ body {
   text-align: left;
   color: #232323;
 }
-
-
 @media (max-width: 767px) {
   .cid-rzuTPcfRXF .card-wrapper .card-box .bottom-line {
     width: 100%;
@@ -2270,4 +2268,3 @@ body {
     background-image: url("../../../assets/images/g-background-mobile.jpg");
   }
 }
-
