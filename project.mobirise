@@ -24,7 +24,7 @@
         "display4Font": "EB Garamond",
         "display4Size": "1.6",
         "isRoundedButtons": true,
-        "isAnimatedOnScroll": false,
+        "isAnimatedOnScroll": true,
         "isScrollToTopButton": false
       },
       "additionalSetColors": []
