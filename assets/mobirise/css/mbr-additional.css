@@ -2251,21 +2251,7 @@ body {
     text-align: center;
     margin: 1rem 0 0 0;
   }
-}
-.cid-rzuTPcfRXF P {
-  text-align: left;
-  color: #232323;
-}
-
-@media (max-width: 767px) {
-.cid-rzuTPcfRXF .card-wrapper .card-box .bottom-line {
-width: 100%;
-}
-.cid-rzuTPcfRXF .card-wrapper .card-box .bottom-line p {
-text-align: center;
-margin: 1rem 0 0 0;
-}
-.cid-rzuDk1mi3c {
-background-image: url("../../../assets/images/g-background-mobile.jpg");
-}
+  .cid-rzuDk1mi3c {
+    background-image: url("../../../assets/images/g-background-mobile.jpg");
+  }
 }
