@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Hayward Data Science",
-    "currentPage": "index.html",
+    "currentPage": "projects.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -15,7 +15,7 @@
         "mainFont": "Rubik",
         "display1Font": "Rubik",
         "display1Size": 4.25,
-        "display2Font": "Rubik",
+        "display2Font": "Special Elite",
         "display2Size": 3,
         "display5Font": "Vollkorn",
         "display5Size": 1.5,
@@ -50,6 +50,11 @@
         "css": "'Vollkorn', serif",
         "name": "Vollkorn",
         "url": "https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,600i,700,700i,900,900i"
+      },
+      {
+        "css": "'Special Elite', display",
+        "name": "Special Elite",
+        "url": "https://fonts.googleapis.com/css?family=Special+Elite:400"
       }
     ],
     "versionFirst": "4.7.6",
