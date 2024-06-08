@@ -12,16 +12,25 @@
             justify-content: center;
             align-items: center;
             background-color: #f9f9f9;
-            overflow: hidden; /* Prevents scrollbars from appearing */
+            overflow: auto; /* Allow scrolling on the body */
         }
         iframe {
-            width: 100vw; /* Adjusted width to fit viewport */
-            height: 100vh; /* Adjusted height to fit viewport */
+            width: 640px; /* Adjusted width */
+            height: 2294px; /* Adjusted height */
             border: none;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjSJwAwNcUTP3_csgTha4wzYCdB6cDdIpTHyUtaK7IPU3nXA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+    <div class="iframe-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjSJwAwNcUTP3_csgTha4wzYCdB6cDdIpTHyUtaK7IPU3nXA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+    </div>
 </body>
 </html>
