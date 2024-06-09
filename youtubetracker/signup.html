@@ -8,29 +8,20 @@
         body, html {
             height: 100%;
             margin: 0;
+            overflow: auto; /* Allow scrolling on the body */
+            background-color: #f9f9f9;
             display: flex;
             justify-content: center;
-            align-items: center;
-            background-color: #f9f9f9;
-            overflow: auto; /* Allow scrolling on the body */
+            align-items: flex-start; /* Align to top to start scrolling from top */
         }
         iframe {
-            width: 640px; /* Adjusted width */
-            height: 2294px; /* Adjusted height */
+            width: 640px; /* Set desired width */
+            height: 100vh; /* Set height to full viewport */
             border: none;
-        }
-        .iframe-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 100vw;
         }
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjSJwAwNcUTP3_csgTha4wzYCdB6cDdIpTHyUtaK7IPU3nXA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjSJwAwNcUTP3_csgTha4wzYCdB6cDdIpTHyUtaK7IPU3nXA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 </body>
 </html>
