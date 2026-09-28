@@ -29,7 +29,7 @@ Never commit names, school emails, assigned student file URLs, responses, grades
 
 ## Launch status
 
-The course is ready for teacher review. Eight live meetings run October–mid-April, with nine sequential lessons. Dates and meeting times require school confirmation. The nine assignment Form URLs and a questions/check-in Form are not yet active; the page labels them unreleased. Google authorization, current-year enrollment, teacher access, school-account access checks and syncing the revised Colab master remain separate setup tasks. No student copies have been provisioned.
+The course is ready for teacher review. Eight live meetings run October–mid-April, with nine sequential lessons. Dates and meeting times require school confirmation. The welcome goals Form is published and linked in lesson 1, with verified Google email collection and a private response Sheet. Eight remaining assignment Forms and the questions/check-in Form are still unreleased. The setup script skips published Forms so it cannot recreate the welcome Form. Google authorization, current-year enrollment, teacher access, school-account access checks and syncing the revised Colab master remain separate setup tasks. No student copies have been provisioned.
 
 The earlier Apps Script hub remains an outdated secondary preview; website updates do not automatically update that deployment. Use the website address for sharing going forward.
 

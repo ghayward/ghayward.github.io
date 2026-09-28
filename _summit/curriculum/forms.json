@@ -9,14 +9,6 @@
         "type": "text"
       },
       {
-        "title": "School email",
-        "type": "email"
-      },
-      {
-        "title": "Submission stage: first attempt, final submission or revision",
-        "type": "text"
-      },
-      {
         "title": "Why are you taking this course?",
         "type": "paragraph"
       },
@@ -37,7 +29,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfNeFv-J9OoBgzePD-twq8ZNgvC09WCTXPmCsY9qruyIHlXJg/viewform"
   },
   {
     "id": "A01",
@@ -98,7 +91,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": null
   },
   {
     "id": "A02",
@@ -182,7 +176,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": null
   },
   {
     "id": "A03",
@@ -226,7 +221,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": null
   },
   {
     "id": "A03R",
@@ -266,7 +262,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": null
   },
   {
     "id": "A04",
@@ -318,7 +315,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": null
   },
   {
     "id": "A05",
@@ -370,7 +368,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": null
   },
   {
     "id": "AI",
@@ -430,7 +429,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": null
   },
   {
     "id": "A06",
@@ -478,7 +478,8 @@
         "type": "paragraph",
         "required": false
       }
-    ]
+    ],
+    "publishedUrl": null
   },
   {
     "id": "questions",

@@ -3,7 +3,8 @@ import json
 from pathlib import Path
 r=Path(__file__).resolve().parents[1];c=json.loads((r/'curriculum/course.json').read_text());spec=[]
 for m in c['modules']:
- fields=[{'title':'Your name','type':'text'},{'title':'School email','type':'email'}]
+ fields=[{'title':'Your name','type':'text'}]
+ if m['id']!='welcome':fields.append({'title':'School email','type':'email'})
  for i,q in enumerate(m['questions'],1):
   fields.append({'title':q,'type':'paragraph'})
   if m['id'] in ['A02','A03','A04','A05']:
@@ -14,8 +15,8 @@ for m in c['modules']:
  if m['id']=='A06':fields.append({'title':'Your final Google Slides link','type':'url'})
  if m['id']=='A01':fields.append({'title':'Optional bonus work: explain your streak or VLOOKUP result','type':'paragraph','required':False})
  fields.append({'title':'What would you like help with? (Optional)','type':'paragraph','required':False})
- fields.insert(2,{'title':'Submission stage: first attempt, final submission or revision','type':'text'})
- spec.append({'id':m['id'],'title':m['title'],'description':m['deliverable'],'fields':fields})
+ if m['id']!='welcome':fields.insert(2,{'title':'Submission stage: first attempt, final submission or revision','type':'text'})
+ spec.append({'id':m['id'],'title':m['title'],'description':m['deliverable'],'fields':fields,'publishedUrl':m.get('submissionUrl')})
 spec.append({'id':'questions','title':'Questions and weekly check-in','description':'Send questions about your current assignment, or say that you are on track. This is not your homework submission.','fields':[{'title':'Your name','type':'text'},{'title':'School email','type':'email'},{'title':'Assignment or topic','type':'text'},{'title':'What have you tried, and where are you stuck? Paste relevant code if helpful.','type':'paragraph'},{'title':'Your Sheet or Colab link (optional)','type':'url','required':False}]})
 (r/'curriculum/forms.json').write_text(json.dumps(spec,ensure_ascii=False,indent=2)+'\n')
 base=(r/'scripts/forms_setup.gs').read_text()

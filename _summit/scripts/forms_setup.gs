@@ -13,6 +13,12 @@ function setupAssignmentForms() {
     const registry = SpreadsheetApp.openById(destinationId).getSheetByName('Form links');
     const result = {};
     ASSIGNMENTS.forEach((a,index) => {
+      // A published native Form is managed in Google Forms, not recreated here.
+      if (a.publishedUrl) {
+        result[a.id] = a.publishedUrl;
+        registry.getRange(index+2,1,1,4).setValues([[a.id,a.publishedUrl,'Managed in Google Forms','Already published — retain existing settings and response destination']]);
+        return;
+      }
       const key = 'form:' + a.id;
       let id = props.getProperty(key), form;
       if (!id) {
