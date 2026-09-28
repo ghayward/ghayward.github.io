@@ -17,6 +17,8 @@ destination.mkdir(exist_ok=True)
 (destination / 'assets').mkdir(exist_ok=True)
 for filename in ['index.html', 'assets/north-star-academy.png']:
     shutil.copy2(ROOT / 'hub' / filename, destination / filename)
+for filename in ['syllabus.pdf', 'opening-slides.pdf']:
+    shutil.copy2(ROOT / 'docs' / filename, destination / filename)
 alias = SITE / 'summit'
 alias.mkdir(exist_ok=True)
 (alias / 'index.html').write_text('''<!doctype html>

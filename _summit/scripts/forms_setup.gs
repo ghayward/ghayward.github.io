@@ -28,9 +28,9 @@ function setupAssignmentForms() {
         if(field.type==='email')item.setValidation(FormApp.createTextValidation().requireTextIsEmail().build());
         if(field.type==='url')item.setValidation(FormApp.createTextValidation().requireTextIsUrl().build());
       });
-      form.setDescription(a.description+'\nUse your school email. Keep your files restricted to you and your teachers. Submit again after revisions; the latest response is your current version.');
-      form.setCollectEmail(false).setLimitOneResponsePerUser(false).setAllowResponseEdits(false).setPublishingSummary(false).setShowLinkToRespondAgain(true);
-      form.setConfirmationMessage('Your '+a.id+' answers have been submitted. Return to the class hub and mark the reminder if you wish. Keep working in the same files; submit again after revisions.');
+      form.setDescription(a.description+'\nSign in with your school Google account. Paste your answers and code here; a notebook link alone is not a submission. Keep your files restricted to you and your teachers. Submit again after revisions; the latest response is your current version.');
+      form.setCollectEmail(true).setLimitOneResponsePerUser(false).setAllowResponseEdits(false).setPublishingSummary(false).setShowLinkToRespondAgain(true);
+      form.setConfirmationMessage('Your '+a.id+' answers have been submitted. Keep this confirmation as your receipt. Keep working in the same files; submit again after revisions.');
       if(form.getDestinationId()!==destinationId)form.setDestination(FormApp.DestinationType.SPREADSHEET,destinationId);
       if(form.supportsAdvancedResponderPermissions())form.setPublished(true);else form.setAcceptingResponses(true);
       result[a.id]=form.getPublishedUrl();

@@ -4,7 +4,7 @@
   "year": "2026–27",
   "status": "Tentative schedule — dates and time await school confirmation",
   "timezone": "America/New_York",
-  "meetingTime": null,
+  "meetingTime": "Time to be confirmed with the school (Eastern time).",
   "currentModule": "welcome",
   "modules": [
     {
@@ -12,7 +12,7 @@
       "title": "Meet Mr. Hayward. What is data science?",
       "month": "October",
       "live": "2026-10-15",
-      "due": "2026-10-16",
+      "due": "2026-10-22",
       "phase": 1,
       "focus": "Start with the slides, meet your classmates, and tell us what you want to learn.",
       "objective": "Describe data science in your own words and set a personal learning goal.",
@@ -31,14 +31,16 @@
         "opening"
       ],
       "workKind": null,
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2026-10-22",
+      "feedbackDue": "2026-11-05"
     },
     {
       "id": "A01",
       "title": "Explore Mr. Hayward’s weight in Sheets",
-      "month": "October",
+      "month": "October–December",
       "live": "2026-10-15",
-      "due": "2026-10-22",
+      "due": "2026-12-03",
       "focus": "Start with Mr. Hayward’s example, then do the calculations in your own Sheet.",
       "objective": "Use COUNT, MEDIAN, AVERAGE, MIN, MAX and a conditional average to answer questions reproducibly.",
       "questions": [
@@ -51,7 +53,7 @@
         "Explain one formula and the range it uses."
       ],
       "deliverable": "Six spreadsheet results, formulas and your explanation. Submit your answers and Sheet link in the assignment Form.",
-      "practice": "Open Mr. Hayward’s worked example, then your own Sheet. Use its Data tab to calculate count, median, mean, minimum, maximum and weekend average. Keep your formulas so someone else can follow them.",
+      "practice": "Get to know your assigned Sheet in October. Submit a first attempt by November 5, review feedback at the November 12 workshop, and finish the six spreadsheet questions by December 3. Try either or both optional bonuses during November. All spreadsheet work finishes before winter break.",
       "check": "Your formulas refer to the Data tab. Your teachers can open your personal Sheet.",
       "source": "S04, S06, S12",
       "notebook": "setup",
@@ -70,14 +72,42 @@
           "text": "Build a small lookup table with one row for each weekday and its mean weight. Use VLOOKUP with an exact match (FALSE) to return the mean for a chosen weekday. Check it against a filtered average."
         }
       ],
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2026-11-18",
+      "feedbackDue": "2026-12-10",
+      "checkpoints": [
+        {
+          "date": "2026-10-22",
+          "label": "Send initial questions before assessment week"
+        },
+        {
+          "date": "2026-11-05",
+          "label": "Submit your first spreadsheet attempt"
+        },
+        {
+          "date": "2026-11-12",
+          "label": "Feedback and optional bonus workshop"
+        },
+        {
+          "date": "2026-11-18",
+          "label": "Send final spreadsheet questions"
+        },
+        {
+          "date": "2026-12-03",
+          "label": "Submit final Sheet and any optional bonuses"
+        },
+        {
+          "date": "2026-12-10",
+          "label": "Teacher feedback returned"
+        }
+      ]
     },
     {
       "id": "A02",
       "title": "From formulas to Python",
-      "month": "November",
-      "live": "2026-11-12",
-      "due": "2026-11-23",
+      "month": "January",
+      "live": "2027-01-14",
+      "due": "2027-02-04",
       "focus": "Solve the same questions in code.",
       "objective": "Use pandas methods and Boolean filtering; distinguish a computed result from a typed answer.",
       "questions": [
@@ -89,7 +119,7 @@
         "What is the latest date marked as a holiday?",
         "Explain one Boolean filter in your code."
       ],
-      "deliverable": "Executed Python answers to six questions, with one sentence explaining a filter.",
+      "deliverable": "Executed Python answers to six questions, with one sentence explaining a filter. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
       "practice": "Work through A02 in your notebook. Compare Python results with your spreadsheet. Save the outputs.",
       "check": "Restart and run all cells. Explain ==, a Boolean, and one method used.",
       "source": "S04, S06, S08",
@@ -100,21 +130,23 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2027-01-28",
+      "feedbackDue": "2027-02-11"
     },
     {
       "id": "A03",
       "title": "Ask a better data question",
-      "month": "December",
-      "live": "2026-12-10",
-      "due": "2026-12-17",
+      "month": "February",
+      "live": "2027-02-04",
+      "due": "2027-02-18",
       "focus": "Explore what “tends to” means before choosing a statistic.",
       "objective": "Filter a dataframe and distinguish a minimum observation from a typical value.",
       "questions": [
         "On what day of the week does Mr. Hayward tend to weigh the least?",
         "Which statistic answers that question, and why?"
       ],
-      "deliverable": "A draft table for all seven weekdays and a justified choice of statistic.",
+      "deliverable": "A draft table for all seven weekdays and a justified choice of statistic. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
       "practice": "Read the weekday example. Produce a count and mean for each weekday; try min and max too.",
       "check": "Explain why the weekday with the lowest minimum need not have the lowest mean.",
       "source": "S05, S13",
@@ -125,21 +157,23 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2027-02-11",
+      "feedbackDue": "2027-02-25"
     },
     {
       "id": "A03R",
-      "title": "Write a clear work email",
-      "month": "January",
-      "live": "2027-01-14",
-      "due": "2027-01-28",
+      "title": "Write a clear letter to your teacher",
+      "month": "February",
+      "live": "2027-02-04",
+      "due": "2027-02-18",
       "focus": "Turn your weekday analysis into an email a busy colleague can understand.",
       "objective": "Write a concise finding, evidence, limitation and next question.",
       "questions": [
         "What does the seven-day comparison show?",
         "What is a plausible hypothesis, and what additional data would test it?"
       ],
-      "deliverable": "A 150–250 word work email: subject, greeting, finding, evidence, limitation and next question. Paste it in the Form and keep a copy in your notebook.",
+      "deliverable": "A 150–250 word work-style email or letter to your teacher: subject, greeting, finding, evidence, limitation and next question. Paste the complete letter into the Form and keep a copy in your notebook.",
       "practice": "Write an email to Mr. Hayward explaining which weekday tends to have the lowest weight. Use the same numbers as your analysis. Paste the draft into the assignment Form; you do not need to send an email.",
       "check": "Lead with the finding. Match the numbers to your notebook and label hypotheses as hypotheses.",
       "source": "S05, S08, S13",
@@ -149,14 +183,16 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2027-02-11",
+      "feedbackDue": "2027-02-25"
     },
     {
       "id": "A04",
       "title": "See the distribution",
-      "month": "February",
-      "live": "2027-02-11",
-      "due": "2027-02-18",
+      "month": "February–March",
+      "live": "2027-02-25",
+      "due": "2027-03-11",
       "focus": "Make a weekend histogram and explain the shape you see.",
       "objective": "Create a labeled histogram and compare groups using consistent bins and sample counts.",
       "questions": [
@@ -164,7 +200,7 @@
         "What changes when you adjust the bins?",
         "How does it compare with weekdays, given different sample sizes?"
       ],
-      "deliverable": "A labeled weekend histogram and a short comparison with weekdays in the notebook.",
+      "deliverable": "A labeled weekend histogram and a short comparison with weekdays in the notebook. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
       "practice": "Make the weekend chart, use common bins for comparison, and report the observation count in each group.",
       "check": "Chart title and axes identify the subset and units. Do not interpret fewer observations as lower weight.",
       "source": "S05, S08",
@@ -175,14 +211,16 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2027-03-04",
+      "feedbackDue": "2027-03-18"
     },
     {
       "id": "A05",
       "title": "Put time back into the story",
-      "month": "February",
-      "live": "2027-02-11",
-      "due": "2027-02-25",
+      "month": "February–March",
+      "live": "2027-02-25",
+      "due": "2027-03-11",
       "focus": "Make a time-series chart. See what a single average leaves out.",
       "objective": "Parse and sort dates, plot a time series, and explain the limits of a summary statistic.",
       "questions": [
@@ -190,7 +228,7 @@
         "Why might giving only that average be misleading?",
         "What pattern is visible when the observations are ordered by time?"
       ],
-      "deliverable": "A dated time-series chart, computed overall mean, and an explanation linked to code.",
+      "deliverable": "A dated time-series chart, computed overall mean, and an explanation linked to code. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
       "practice": "After the histogram, make a chart with real dates on the horizontal axis. Compare what it shows with the single overall mean.",
       "check": "Date axis reflects real dates. Written claims name the relevant time period and avoid unsupported causes.",
       "source": "S05, S09",
@@ -201,27 +239,28 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2027-03-04",
+      "feedbackDue": "2027-03-18"
     },
     {
       "id": "AI",
-      "title": "Can AI help? Check its work.",
-      "month": "March",
+      "title": "Redo your work with Gemini. Check its answers.",
+      "month": "March–April",
       "live": "2027-03-18",
       "due": "2027-04-08",
       "phase": 3,
       "focus": "Revisit a question you already solved. Use AI to help, then judge the result yourself.",
       "objective": "Use AI to produce a useful data artifact and verify its claims against reproducible work.",
       "questions": [
-        "Which earlier question did you ask AI to help with, and what prompt did you use?",
-        "What did it produce: a document, table, chart or suggested code?",
-        "What did AI get right? Give a result you independently checked.",
-        "What was wrong, incomplete or uncertain? If you found no error, explain what you checked.",
-        "What did you change before trusting or using the result?",
-        "What was faster, what still needed your judgment, and when would you avoid relying on AI?"
+        "Which spreadsheet question and Python or chart task did you ask Gemini to redo?",
+        "What exact prompts did you use, and what did Gemini produce?",
+        "Which parts do you agree with, and what evidence supports them?",
+        "Which parts are wrong, uncertain or incomplete, and how did you correct them?",
+        "What are the pros and cons of using Gemini for this work? What should still be checked by a person?"
       ],
       "deliverable": "An AI-assisted Google Doc or Sheet (or a notebook section), your prompt, two independent checks and a short critique.",
-      "practice": "Use the school-approved free AI tool available to you. Give it the public GitHub CSV or a teacher-provided excerpt. Ask it to improve one earlier analysis. Verify at least two numerical claims against your own Sheet or Python. Export to Docs/Sheets if available; otherwise paste the output into a Google Doc and label it AI-generated. Pause for March 22–26 assessments and March 29–April 2 break; finish April 5–8.",
+      "practice": "After completing the spreadsheet and Python work, ask school-approved Gemini to redo at least one spreadsheet question and one Python or chart task. Give it only Mr. Hayward’s public dataset. Save the prompts, response and a useful Doc, Sheet or notebook artifact. Compare its results with your own work and independently check two numerical claims. Explain what was faster, what you agree or disagree with, and the pros and cons of relying on it. If Gemini is unavailable, ask your teacher for a response to evaluate. Pause during assessments and spring break.",
       "check": "Show the original AI output and your corrections. Do not assume AI opened the URL: ask what rows and columns it actually read. Use only the public teaching dataset.",
       "source": "New 2026–27 module requested by George; tool availability subject to school account settings",
       "notebook": "AI",
@@ -229,14 +268,16 @@
         "data"
       ],
       "workKind": "notebook",
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2027-03-19",
+      "feedbackDue": "2027-04-12"
     },
     {
       "id": "A06",
       "title": "Show us what you learned",
       "month": "April",
-      "live": "2027-04-29",
-      "due": "2027-04-29",
+      "live": "2027-04-15",
+      "due": "2027-04-15",
       "focus": "Present your best analysis and explain how you know it is right.",
       "objective": "Present an evidence-based finding, explain a code choice and reflect on AI assistance.",
       "questions": [
@@ -245,24 +286,41 @@
         "What three tips would you give a new student?",
         "How did your work connect to the goal you set at the start?"
       ],
-      "deliverable": "A four-slide presentation, your final notebook and a short course reflection. Present by the end of April.",
-      "practice": "Prepare four slides: your question; one chart with evidence and a code excerpt; what AI helped with and what you checked or corrected; three tips for future students. Draft by April 22, then present at the April workshop. Recommend a next step and name a limitation in your explanation.",
+      "deliverable": "A four-slide presentation, final notebook and short reflection. Paste your Slides link and reflection in the Form. Present in mid-April.",
+      "practice": "Prepare four slides: your question; a chart with evidence and a code excerpt; Gemini’s help, mistakes and your independent checks; and three tips for future students. Submit a draft by April 8, use feedback by April 12, and present on April 15. Your teachers will share a clean presentation example.",
       "check": "You can explain your chart, one code choice, a limitation, and one AI check without simply reading generated text.",
       "source": "S01, S05, S08",
       "notebook": "A06",
       "resources": [],
       "phase": 3,
       "workKind": "notebook",
-      "submissionUrl": null
+      "submissionUrl": null,
+      "questionsDue": "2027-04-08",
+      "feedbackDue": "2027-04-19",
+      "checkpoints": [
+        {
+          "date": "2027-04-08",
+          "label": "Presentation draft due"
+        },
+        {
+          "date": "2027-04-12",
+          "label": "Draft feedback returned"
+        },
+        {
+          "date": "2027-04-15",
+          "label": "Final presentation"
+        }
+      ]
     }
   ],
   "resources": [
     {
       "id": "opening",
-      "title": "What is data science?",
+      "title": "What is data science? — 2026–27 slides",
       "kind": "Opening slides",
-      "url": "https://docs.google.com/presentation/d/1PgM5GFzzU_Xf_-7YkQ_gYIc4bVAvh2JbOmQfQY9DOCU/edit",
-      "note": "Mr. Hayward’s introduction to the course."
+      "url": "https://www.haywarddatascience.com/summit2026_2027/opening-slides.pdf",
+      "note": "The clean 2026–27 introduction, dated October 2026.",
+      "description": "The clean 2026–27 introduction, dated October 2026. Opens as a PDF."
     },
     {
       "id": "exampleSheet",
@@ -305,10 +363,14 @@
     "submissionForm": null,
     "sheetTemplate": "https://docs.google.com/spreadsheets/d/1QBAGrgaNWUS7YinpR976u3cR32N405f7Vzr9bKs29-s/copy",
     "notebookTemplate": "https://colab.research.google.com/drive/1YjEQwhHYvVW3valn4YhemwHCK0EwqEJx",
-    "exampleSheet": "https://docs.google.com/spreadsheets/d/1iKQI1XMeiTLH1a8nOsleTd8OCiLYBMd1LwFWAP6X1cU/edit"
+    "exampleSheet": "https://docs.google.com/spreadsheets/d/1iKQI1XMeiTLH1a8nOsleTd8OCiLYBMd1LwFWAP6X1cU/edit",
+    "syllabusDoc": "https://docs.google.com/document/d/1rPPVmQCbHwy0VSqkmJIO2FfWK2ggGHhQ9W78hZqFelQ/edit",
+    "syllabusPdf": "https://www.haywarddatascience.com/summit2026_2027/syllabus.pdf",
+    "questionsForm": null,
+    "openingSlidesEditor": "https://docs.google.com/presentation/d/1QExOPRecLlneN5-e9iV3lPRdvVNh24we0VQTCA12ZnQ/edit"
   },
   "submissionNote": "Each lesson has its own Google Form. Type your answers and paste the link to your work. The Form receipt is your submission confirmation.",
-  "endDate": "2027-04-29",
+  "endDate": "2027-04-15",
   "workshops": [
     {
       "date": "2026-10-15",
@@ -321,31 +383,40 @@
     },
     {
       "date": "2026-11-12",
-      "title": "From Sheets to Python",
+      "title": "Spreadsheet feedback and optional bonuses",
+      "modules": [
+        "A01"
+      ],
+      "minutes": 45
+    },
+    {
+      "date": "2026-12-03",
+      "title": "Finish the spreadsheet work",
+      "modules": [
+        "A01"
+      ],
+      "minutes": 30
+    },
+    {
+      "date": "2027-01-14",
+      "title": "Start Python in your own Colab",
       "modules": [
         "A02"
       ],
       "minutes": 45
     },
     {
-      "date": "2026-12-10",
-      "title": "Ask a better question",
+      "date": "2027-02-04",
+      "title": "Compare weekdays and explain a finding",
       "modules": [
-        "A03"
-      ],
-      "minutes": 45
-    },
-    {
-      "date": "2027-01-14",
-      "title": "Write a work email",
-      "modules": [
+        "A03",
         "A03R"
       ],
       "minutes": 45
     },
     {
-      "date": "2027-02-11",
-      "title": "Tell the story with charts",
+      "date": "2027-02-25",
+      "title": "Make and explain two charts",
       "modules": [
         "A04",
         "A05"
@@ -354,14 +425,14 @@
     },
     {
       "date": "2027-03-18",
-      "title": "Use AI and check its work",
+      "title": "Redo earlier work with Gemini and check it",
       "modules": [
         "AI"
       ],
       "minutes": 45
     },
     {
-      "date": "2027-04-29",
+      "date": "2027-04-15",
       "title": "Final presentations",
       "modules": [
         "A06"
@@ -373,17 +444,34 @@
     {
       "id": 1,
       "title": "Meet the data",
-      "description": "Meet Mr. Hayward, set a goal, and learn your way around the spreadsheet. Try the optional bonuses if you want a stretch."
+      "description": "Meet Mr. Hayward in October, set a goal and work in Sheets throughout November. Finish the spreadsheet questions and optional bonuses by December 3."
     },
     {
       "id": 2,
       "title": "Learn to code and explain",
-      "description": "Answer questions in Python, write a work email, and make charts you can explain."
+      "description": "Start Python in mid-January. Use your own Colab for short assignments, write a letter to your teacher and make charts. Submit answers and code through Forms."
     },
     {
       "id": 3,
       "title": "Think with AI, then present",
-      "description": "Use AI to revisit your work, test its answers, and share what you learned. We finish in April."
+      "description": "Use Gemini to redo earlier tasks, explain its pros and cons, and verify its answers. Present what you learned in mid-April."
+    }
+  ],
+  "breaks": [
+    {
+      "start": "2026-12-11",
+      "end": "2027-01-13",
+      "label": "Winter course pause"
+    },
+    {
+      "start": "2027-01-19",
+      "end": "2027-01-22",
+      "label": "School assessments"
+    },
+    {
+      "start": "2027-03-22",
+      "end": "2027-04-02",
+      "label": "School assessments and spring break"
     }
   ]
 }

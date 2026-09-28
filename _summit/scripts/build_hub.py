@@ -7,8 +7,8 @@ c=json.loads((R/'curriculum/course.json').read_text())
 if 'students' in c or 'roster' in c:
  raise ValueError('Keep the roster and assigned student file links in private Google Drive, not course.json.')
 with (R/'curriculum/schedule.csv').open('w',newline='') as f:
- writer=csv.writer(f,lineterminator="\n");writer.writerow(['Assignment','Live date tentative','Due date tentative','Topic','Deliverable'])
- for m in c['modules']:writer.writerow([m['id'],m['live'],m['due'] or '',m['title'],m['deliverable']])
+ writer=csv.writer(f,lineterminator="\n");writer.writerow(['Assignment','Live date tentative','Questions due tentative','Work due tentative','Feedback due tentative','Topic','Deliverable'])
+ for m in c['modules']:writer.writerow([m['id'],m['live'],m['questionsDue'],m['due'] or '',m['feedbackDue'],m['title'],m['deliverable']])
 rows=list(csv.DictReader((R/'curriculum/data/mr_hayward_weight.csv').open()))
 data={'count':len(rows),'columns':list(rows[0]),'preview':rows[:6]}
 style=(R/'scripts/hub.css').read_text();js=(R/'scripts/hub.js').read_text();template=(R/'scripts/hub.html').read_text()

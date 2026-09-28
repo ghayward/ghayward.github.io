@@ -8,7 +8,7 @@ md('''# North Star Summit 2026–27
 ## Your data science notebook
 Use **File → Save a copy in Drive** once, unless your teacher has already assigned you a personal notebook. Rename your copy `Summit 2026-27 - Your Name`. Keep this same copy all year and save its link in the hub’s **My work** section.
 
-Work in the assignment sections below. Run cells from the top after reconnecting. Keep your code, outputs and explanation together. Submit the link through **the answer Form for each assignment** in the class hub. Sharing the link does not automatically grant access: confirm your teachers can open your copy.
+Work in the assignment sections below. Run cells from the top after reconnecting. Keep your code, outputs and explanation together. Submit your answers, the code you ran and its result, plus the link through **the answer Form for each assignment** in the class hub. Sharing the link does not automatically grant access: confirm your teachers can open your copy.
 
 You may use documentation, classmates and AI to learn. Explain your own code, check the output, and note help you received.
 
@@ -51,8 +51,8 @@ The example below starts with Monday. You can adapt it for the other days or exp
 ''')
 code('monday = df[df["day_of_week"] == "Monday"]\nprint("Count:", len(monday))\nprint("Mean:", monday["weight"].mean())\nprint("Min:", monday["weight"].min())\nprint("Max:", monday["weight"].max())\n')
 code('# Compare all seven days here.\n')
-md('''### A03R Your work email
-Write a 150–250 word work email to Mr. Hayward. Include a subject and greeting, then the finding, supporting numbers, a limitation, and a next question. Paste it into the assignment Form; you do not need to email it. Label hypotheses as hypotheses. The dataset does not tell us what caused any pattern.
+md('''### A03R Your letter to your teacher
+Write a 150–250 word letter to your teacher, Mr. Hayward. Include a subject and greeting, then the finding, supporting numbers, a limitation, and a next question. Paste it into the assignment Form; you do not need to email it. Label hypotheses as hypotheses. The dataset does not tell us what caused any pattern.
 
 **Subject and greeting:**
 
@@ -103,7 +103,7 @@ md('''What is the overall mean? Why might reporting only that number be misleadi
 **My explanation:**
 ''')
 md('''## AI Can AI help? Check its work.
-Revisit one question you have already solved. Use the school-approved free AI tool your teachers make available, such as Gemini. Give it the public GitHub CSV URL from Setup, or a teacher-provided excerpt if the URL is inaccessible. Ask what rows and columns it actually read.
+Redo at least one Sheets question and one Python or chart question you have already solved. Use school-approved Google Gemini; if it is unavailable, critique a teacher-provided AI response. Give it the public GitHub CSV URL from Setup, or a teacher-provided excerpt if the URL is inaccessible. Ask what rows and columns it actually read.
 
 Ask for a useful artifact: a clearer chart, a summary document, a table or improved code. Export to a Google Doc or Sheet if that feature is available. Otherwise paste its response into a Doc or this notebook and label it AI-generated. If individual AI access is unavailable, critique a teacher-provided AI response.
 

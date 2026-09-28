@@ -13,6 +13,10 @@
         "type": "email"
       },
       {
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
+      },
+      {
         "title": "Why are you taking this course?",
         "type": "paragraph"
       },
@@ -47,6 +51,10 @@
       {
         "title": "School email",
         "type": "email"
+      },
+      {
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
       },
       {
         "title": "How many observations are in the data?",
@@ -95,7 +103,7 @@
   {
     "id": "A02",
     "title": "From formulas to Python",
-    "description": "Executed Python answers to six questions, with one sentence explaining a filter.",
+    "description": "Executed Python answers to six questions, with one sentence explaining a filter. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
     "fields": [
       {
         "title": "Your name",
@@ -106,7 +114,15 @@
         "type": "email"
       },
       {
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
+      },
+      {
         "title": "What is the lowest weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 1: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -114,7 +130,15 @@
         "type": "paragraph"
       },
       {
+        "title": "Question 2: paste the Python code you ran, then its output or result.",
+        "type": "paragraph"
+      },
+      {
         "title": "What is max minus min, rounded using code?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 3: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -122,7 +146,15 @@
         "type": "paragraph"
       },
       {
+        "title": "Question 4: paste the Python code you ran, then its output or result.",
+        "type": "paragraph"
+      },
+      {
         "title": "What is the latest date?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 5: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -130,7 +162,15 @@
         "type": "paragraph"
       },
       {
+        "title": "Question 6: paste the Python code you ran, then its output or result.",
+        "type": "paragraph"
+      },
+      {
         "title": "Explain one Boolean filter in your code.",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 7: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -147,7 +187,7 @@
   {
     "id": "A03",
     "title": "Ask a better data question",
-    "description": "A draft table for all seven weekdays and a justified choice of statistic.",
+    "description": "A draft table for all seven weekdays and a justified choice of statistic. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
     "fields": [
       {
         "title": "Your name",
@@ -158,11 +198,23 @@
         "type": "email"
       },
       {
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
+      },
+      {
         "title": "On what day of the week does Mr. Hayward tend to weigh the least?",
         "type": "paragraph"
       },
       {
+        "title": "Question 1: paste the Python code you ran, then its output or result.",
+        "type": "paragraph"
+      },
+      {
         "title": "Which statistic answers that question, and why?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 2: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -178,8 +230,8 @@
   },
   {
     "id": "A03R",
-    "title": "Write a clear work email",
-    "description": "A 150–250 word work email: subject, greeting, finding, evidence, limitation and next question. Paste it in the Form and keep a copy in your notebook.",
+    "title": "Write a clear letter to your teacher",
+    "description": "A 150–250 word work-style email or letter to your teacher: subject, greeting, finding, evidence, limitation and next question. Paste the complete letter into the Form and keep a copy in your notebook.",
     "fields": [
       {
         "title": "Your name",
@@ -190,6 +242,10 @@
         "type": "email"
       },
       {
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
+      },
+      {
         "title": "What does the seven-day comparison show?",
         "type": "paragraph"
       },
@@ -198,7 +254,7 @@
         "type": "paragraph"
       },
       {
-        "title": "Paste your 150–250 word work email here (include subject and greeting).",
+        "title": "Paste your complete 150–250 word letter to your teacher here (include subject and greeting).",
         "type": "paragraph"
       },
       {
@@ -215,7 +271,7 @@
   {
     "id": "A04",
     "title": "See the distribution",
-    "description": "A labeled weekend histogram and a short comparison with weekdays in the notebook.",
+    "description": "A labeled weekend histogram and a short comparison with weekdays in the notebook. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
     "fields": [
       {
         "title": "Your name",
@@ -226,7 +282,15 @@
         "type": "email"
       },
       {
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
+      },
+      {
         "title": "What does the weekend weight distribution look like?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 1: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -234,7 +298,15 @@
         "type": "paragraph"
       },
       {
+        "title": "Question 2: paste the Python code you ran, then its output or result.",
+        "type": "paragraph"
+      },
+      {
         "title": "How does it compare with weekdays, given different sample sizes?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 3: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -251,7 +323,7 @@
   {
     "id": "A05",
     "title": "Put time back into the story",
-    "description": "A dated time-series chart, computed overall mean, and an explanation linked to code.",
+    "description": "A dated time-series chart, computed overall mean, and an explanation linked to code. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
     "fields": [
       {
         "title": "Your name",
@@ -262,7 +334,15 @@
         "type": "email"
       },
       {
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
+      },
+      {
         "title": "What is the overall average weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 1: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -270,7 +350,15 @@
         "type": "paragraph"
       },
       {
+        "title": "Question 2: paste the Python code you ran, then its output or result.",
+        "type": "paragraph"
+      },
+      {
         "title": "What pattern is visible when the observations are ordered by time?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Question 3: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -286,7 +374,7 @@
   },
   {
     "id": "AI",
-    "title": "Can AI help? Check its work.",
+    "title": "Redo your work with Gemini. Check its answers.",
     "description": "An AI-assisted Google Doc or Sheet (or a notebook section), your prompt, two independent checks and a short critique.",
     "fields": [
       {
@@ -298,27 +386,27 @@
         "type": "email"
       },
       {
-        "title": "Which earlier question did you ask AI to help with, and what prompt did you use?",
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
+      },
+      {
+        "title": "Which spreadsheet question and Python or chart task did you ask Gemini to redo?",
         "type": "paragraph"
       },
       {
-        "title": "What did it produce: a document, table, chart or suggested code?",
+        "title": "What exact prompts did you use, and what did Gemini produce?",
         "type": "paragraph"
       },
       {
-        "title": "What did AI get right? Give a result you independently checked.",
+        "title": "Which parts do you agree with, and what evidence supports them?",
         "type": "paragraph"
       },
       {
-        "title": "What was wrong, incomplete or uncertain? If you found no error, explain what you checked.",
+        "title": "Which parts are wrong, uncertain or incomplete, and how did you correct them?",
         "type": "paragraph"
       },
       {
-        "title": "What did you change before trusting or using the result?",
-        "type": "paragraph"
-      },
-      {
-        "title": "What was faster, what still needed your judgment, and when would you avoid relying on AI?",
+        "title": "What are the pros and cons of using Gemini for this work? What should still be checked by a person?",
         "type": "paragraph"
       },
       {
@@ -347,7 +435,7 @@
   {
     "id": "A06",
     "title": "Show us what you learned",
-    "description": "A four-slide presentation, your final notebook and a short course reflection. Present by the end of April.",
+    "description": "A four-slide presentation, final notebook and short reflection. Paste your Slides link and reflection in the Form. Present in mid-April.",
     "fields": [
       {
         "title": "Your name",
@@ -356,6 +444,10 @@
       {
         "title": "School email",
         "type": "email"
+      },
+      {
+        "title": "Submission stage: first attempt, final submission or revision",
+        "type": "text"
       },
       {
         "title": "What is your main finding and the evidence for it?",
@@ -384,6 +476,34 @@
       {
         "title": "What would you like help with? (Optional)",
         "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "questions",
+    "title": "Questions and weekly check-in",
+    "description": "Send questions about your current assignment, or say that you are on track. This is not your homework submission.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "Assignment or topic",
+        "type": "text"
+      },
+      {
+        "title": "What have you tried, and where are you stuck? Paste relevant code if helpful.",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Sheet or Colab link (optional)",
+        "type": "url",
         "required": false
       }
     ]
