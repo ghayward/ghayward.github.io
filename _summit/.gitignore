@@ -1,0 +1,10 @@
+hub/
+apps-script/
+__pycache__/
+tmp/
+.env*
+research/
+private/
+*roster*
+*responses*
+*submissions*

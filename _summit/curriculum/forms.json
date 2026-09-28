@@ -1,0 +1,391 @@
+[
+  {
+    "id": "welcome",
+    "title": "Meet Mr. Hayward. What is data science?",
+    "description": "Your introduction and learning goals in the welcome Form.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "Why are you taking this course?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What would you like to be able to do by April?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is one question you would like to answer with data?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What experience do you have with spreadsheets or coding?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "A01",
+    "title": "Explore Mr. Hayward’s weight in Sheets",
+    "description": "Six spreadsheet results, formulas and your explanation. Submit your answers and Sheet link in the assignment Form.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "How many observations are in the data?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the median weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the average weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the lowest weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the highest weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the average weight on weekends?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Explain one formula and the range it uses.",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Google Sheet link",
+        "type": "url"
+      },
+      {
+        "title": "Optional bonus work: explain your streak or VLOOKUP result",
+        "type": "paragraph",
+        "required": false
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "A02",
+    "title": "From formulas to Python",
+    "description": "Executed Python answers to six questions, with one sentence explaining a filter.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "What is the lowest weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the highest weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is max minus min, rounded using code?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the earliest date?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the latest date?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is the latest date marked as a holiday?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Explain one Boolean filter in your code.",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Colab notebook link",
+        "type": "url"
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "A03",
+    "title": "Ask a better data question",
+    "description": "A draft table for all seven weekdays and a justified choice of statistic.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "On what day of the week does Mr. Hayward tend to weigh the least?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Which statistic answers that question, and why?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Colab notebook link",
+        "type": "url"
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "A03R",
+    "title": "Write a clear work email",
+    "description": "A 150–250 word work email: subject, greeting, finding, evidence, limitation and next question. Paste it in the Form and keep a copy in your notebook.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "What does the seven-day comparison show?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What is a plausible hypothesis, and what additional data would test it?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Paste your 150–250 word work email here (include subject and greeting).",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Colab notebook link",
+        "type": "url"
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "A04",
+    "title": "See the distribution",
+    "description": "A labeled weekend histogram and a short comparison with weekdays in the notebook.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "What does the weekend weight distribution look like?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What changes when you adjust the bins?",
+        "type": "paragraph"
+      },
+      {
+        "title": "How does it compare with weekdays, given different sample sizes?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Colab notebook link",
+        "type": "url"
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "A05",
+    "title": "Put time back into the story",
+    "description": "A dated time-series chart, computed overall mean, and an explanation linked to code.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "What is the overall average weight?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Why might giving only that average be misleading?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What pattern is visible when the observations are ordered by time?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Colab notebook link",
+        "type": "url"
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "AI",
+    "title": "Can AI help? Check its work.",
+    "description": "An AI-assisted Google Doc or Sheet (or a notebook section), your prompt, two independent checks and a short critique.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "Which earlier question did you ask AI to help with, and what prompt did you use?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What did it produce: a document, table, chart or suggested code?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What did AI get right? Give a result you independently checked.",
+        "type": "paragraph"
+      },
+      {
+        "title": "What was wrong, incomplete or uncertain? If you found no error, explain what you checked.",
+        "type": "paragraph"
+      },
+      {
+        "title": "What did you change before trusting or using the result?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What was faster, what still needed your judgment, and when would you avoid relying on AI?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Colab notebook link",
+        "type": "url"
+      },
+      {
+        "title": "Link to your AI-assisted Doc, Sheet or notebook section",
+        "type": "url"
+      },
+      {
+        "title": "Independent check 1: AI claim, your calculation and result",
+        "type": "paragraph"
+      },
+      {
+        "title": "Independent check 2: AI claim, your calculation and result",
+        "type": "paragraph"
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  },
+  {
+    "id": "A06",
+    "title": "Show us what you learned",
+    "description": "A four-slide presentation, your final notebook and a short course reflection. Present by the end of April.",
+    "fields": [
+      {
+        "title": "Your name",
+        "type": "text"
+      },
+      {
+        "title": "School email",
+        "type": "email"
+      },
+      {
+        "title": "What is your main finding and the evidence for it?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What did AI help with, and what did you have to check or change?",
+        "type": "paragraph"
+      },
+      {
+        "title": "What three tips would you give a new student?",
+        "type": "paragraph"
+      },
+      {
+        "title": "How did your work connect to the goal you set at the start?",
+        "type": "paragraph"
+      },
+      {
+        "title": "Your Colab notebook link",
+        "type": "url"
+      },
+      {
+        "title": "Your final Google Slides link",
+        "type": "url"
+      },
+      {
+        "title": "What would you like help with? (Optional)",
+        "type": "paragraph",
+        "required": false
+      }
+    ]
+  }
+]

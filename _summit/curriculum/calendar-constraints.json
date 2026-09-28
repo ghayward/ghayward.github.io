@@ -1,0 +1,131 @@
+{
+  "source": "User-supplied WPHS 2026\u20132027 School Calendar, page 1",
+  "avoid": [
+    {
+      "start": "2026-10-09",
+      "end": "2026-10-09",
+      "reason": "PSAT/Fall SAT"
+    },
+    {
+      "start": "2026-10-12",
+      "end": "2026-10-12",
+      "reason": "School closed"
+    },
+    {
+      "start": "2026-10-26",
+      "end": "2026-10-30",
+      "reason": "Q1 IAs"
+    },
+    {
+      "start": "2026-11-11",
+      "end": "2026-11-11",
+      "reason": "Report card conferences"
+    },
+    {
+      "start": "2026-11-19",
+      "end": "2026-11-21",
+      "reason": "Fall play"
+    },
+    {
+      "start": "2026-11-25",
+      "end": "2026-11-27",
+      "reason": "Thanksgiving break"
+    },
+    {
+      "start": "2026-12-21",
+      "end": "2027-01-01",
+      "reason": "Winter break"
+    },
+    {
+      "start": "2027-01-18",
+      "end": "2027-01-18",
+      "reason": "MLK Day"
+    },
+    {
+      "start": "2027-01-19",
+      "end": "2027-01-22",
+      "reason": "Q2 IAs"
+    },
+    {
+      "start": "2027-01-26",
+      "end": "2027-01-26",
+      "reason": "Project fair"
+    },
+    {
+      "start": "2027-02-03",
+      "end": "2027-02-03",
+      "reason": "Report card conferences"
+    },
+    {
+      "start": "2027-02-05",
+      "end": "2027-02-05",
+      "reason": "SAT diagnostic"
+    },
+    {
+      "start": "2027-02-15",
+      "end": "2027-02-15",
+      "reason": "Presidents Day"
+    },
+    {
+      "start": "2027-03-05",
+      "end": "2027-03-05",
+      "reason": "SAT day"
+    },
+    {
+      "start": "2027-03-10",
+      "end": "2027-03-10",
+      "reason": "Eid"
+    },
+    {
+      "start": "2027-03-13",
+      "end": "2027-03-15",
+      "reason": "Spring musical"
+    },
+    {
+      "start": "2027-03-22",
+      "end": "2027-03-26",
+      "reason": "Q3 IAs / Good Friday"
+    },
+    {
+      "start": "2027-03-29",
+      "end": "2027-04-02",
+      "reason": "Spring break"
+    },
+    {
+      "start": "2027-04-21",
+      "end": "2027-04-21",
+      "reason": "Report card conferences"
+    },
+    {
+      "start": "2027-05-03",
+      "end": "2027-05-14",
+      "reason": "AP testing"
+    },
+    {
+      "start": "2027-05-26",
+      "end": "2027-05-27",
+      "reason": "Senior IAs"
+    },
+    {
+      "start": "2027-05-31",
+      "end": "2027-05-31",
+      "reason": "Memorial Day"
+    },
+    {
+      "start": "2027-06-03",
+      "end": "2027-06-03",
+      "reason": "Project fair"
+    },
+    {
+      "start": "2027-06-07",
+      "end": "2027-06-11",
+      "reason": "Q4 IAs / graduation / last day"
+    }
+  ],
+  "notes": [
+    "April 12\u201316 is Teacher Appreciation Week; April 15 remains tentative.",
+    "April 22 is Ops Appreciation Day.",
+    "Calendar says Q3 ends March 25 while IAs run through March 26; preserve both statements.",
+    "June 14\u201316 are possible makeup days. No required program work is planned then."
+  ]
+}
