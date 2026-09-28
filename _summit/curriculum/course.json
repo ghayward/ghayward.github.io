@@ -41,7 +41,7 @@
       "month": "October–December",
       "live": "2026-10-15",
       "due": "2026-12-03",
-      "focus": "Start with Mr. Hayward’s example, then do the calculations in your own Sheet.",
+      "focus": "Open your own student Sheet. It contains the data and questions, with blank spaces for your formulas and explanations.",
       "objective": "Use COUNT, MEDIAN, AVERAGE, MIN, MAX and a conditional average to answer questions reproducibly.",
       "questions": [
         "How many observations are in the data?",
@@ -53,13 +53,11 @@
         "Explain one formula and the range it uses."
       ],
       "deliverable": "Six spreadsheet results, formulas and your explanation. Submit your answers and Sheet link in the assignment Form.",
-      "practice": "Get to know your assigned Sheet in October. Submit a first attempt by November 5, review feedback at the November 12 workshop, and finish the six spreadsheet questions by December 3. Try either or both optional bonuses during November. All spreadsheet work finishes before winter break.",
+      "practice": "Your teachers will give you a personal copy of the blank student Sheet. Use the Data tab to answer the six questions in My work. Submit a first attempt by November 5, review feedback at the November 12 workshop, and finish by December 3. Try either or both optional bonuses during November.",
       "check": "Your formulas refer to the Data tab. Your teachers can open your personal Sheet.",
       "source": "S04, S06, S12",
       "notebook": "setup",
-      "resources": [
-        "exampleSheet"
-      ],
+      "resources": [],
       "phase": 1,
       "workKind": "sheet",
       "bonuses": [
@@ -323,13 +321,6 @@
       "description": "The clean 2026–27 introduction, dated October 2026. Opens as a PDF."
     },
     {
-      "id": "exampleSheet",
-      "title": "Mr. Hayward’s worked spreadsheet",
-      "kind": "Example",
-      "url": "https://docs.google.com/spreadsheets/d/1iKQI1XMeiTLH1a8nOsleTd8OCiLYBMd1LwFWAP6X1cU/edit",
-      "note": "Look at the example, then do your work in your own Sheet."
-    },
-    {
       "id": "data",
       "title": "View the data on GitHub",
       "kind": "Data",
@@ -363,7 +354,6 @@
     "submissionForm": null,
     "sheetTemplate": "https://docs.google.com/spreadsheets/d/1QBAGrgaNWUS7YinpR976u3cR32N405f7Vzr9bKs29-s/copy",
     "notebookTemplate": "https://colab.research.google.com/drive/1YjEQwhHYvVW3valn4YhemwHCK0EwqEJx",
-    "exampleSheet": "https://docs.google.com/spreadsheets/d/1iKQI1XMeiTLH1a8nOsleTd8OCiLYBMd1LwFWAP6X1cU/edit",
     "syllabusDoc": "https://docs.google.com/document/d/1rPPVmQCbHwy0VSqkmJIO2FfWK2ggGHhQ9W78hZqFelQ/edit",
     "syllabusPdf": "https://www.haywarddatascience.com/summit2026_2027/syllabus.pdf",
     "questionsForm": null,
