@@ -2,7 +2,7 @@
   "title": "North Star Summit",
   "subtitle": "Data science with Mr. Hayward",
   "year": "2026–27",
-  "status": "Tentative schedule — dates and time await school confirmation",
+  "status": "Tentative schedule. Dates and time await school confirmation.",
   "timezone": "America/New_York",
   "meetingTime": "Time to be confirmed with the school (Eastern time).",
   "currentModule": "welcome",
@@ -314,7 +314,7 @@
   "resources": [
     {
       "id": "opening",
-      "title": "What is data science? — 2026–27 slides",
+      "title": "What is data science? (2026–27 slides)",
       "kind": "Opening slides",
       "url": "https://www.haywarddatascience.com/summit2026_2027/opening-slides.pdf",
       "note": "The clean 2026–27 introduction, dated October 2026.",

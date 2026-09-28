@@ -25,6 +25,6 @@ for name in ('summit-2026-27.ipynb','mr_hayward_weight.csv'):
 (R/'hub/index.html').write_text(build(False))
 (R/'apps-script').mkdir(exist_ok=True)
 (R/'apps-script/Index.html').write_text(build(True))
-(R/'apps-script/Code.gs').write_text('function doGet() {\n  return HtmlService.createHtmlOutputFromFile("Index")\n    .setTitle("North Star Summit — Data Science with Mr. Hayward")\n    .addMetaTag("viewport", "width=device-width, initial-scale=1");\n}\n')
+(R/'apps-script/Code.gs').write_text('function doGet() {\n  return HtmlService.createHtmlOutputFromFile("Index")\n    .setTitle("North Star Summit: Data Science with Mr. Hayward")\n    .addMetaTag("viewport", "width=device-width, initial-scale=1");\n}\n')
 (R/'apps-script/appsscript.json').write_text(json.dumps({'timeZone':'America/New_York','runtimeVersion':'V8','exceptionLogging':'STACKDRIVER','oauthScopes':[]},indent=2))
 print('Built static hub and self-contained Apps Script package')
