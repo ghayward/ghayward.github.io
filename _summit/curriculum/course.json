@@ -361,7 +361,9 @@
     "syllabusDoc": "https://docs.google.com/document/d/1hEfom1ZGWgO2C4vrKNXtoCbb9qQjj40rVSyzmnMvb9w/edit",
     "syllabusPdf": "https://www.haywarddatascience.com/summit2026_2027/syllabus.pdf",
     "questionsForm": "https://docs.google.com/forms/d/e/1FAIpQLSd5oYU9PwcP2zHgxYy0k-j4pDuNn2rBMx5Bqbd4aAuV3suaUQ/viewform",
-    "openingSlidesEditor": "https://docs.google.com/presentation/d/1QExOPRecLlneN5-e9iV3lPRdvVNh24we0VQTCA12ZnQ/edit"
+    "openingSlidesEditor": "https://docs.google.com/presentation/d/1QExOPRecLlneN5-e9iV3lPRdvVNh24we0VQTCA12ZnQ/edit",
+    "gemini": "https://gemini.google.com/app",
+    "controlsCsv": null
   },
   "submissionNote": "Each lesson has its own Google Form. Type your answers and paste the link to your work. The Form receipt is your submission confirmation.",
   "endDate": "2027-04-15",

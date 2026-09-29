@@ -2,12 +2,14 @@
 from html import escape
 from pathlib import Path
 import json
+import base64
 import subprocess
 
 R = Path(__file__).resolve().parents[1]
 s = json.loads((R / 'curriculum/syllabus-table.json').read_text())
 CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 SECTIONS = [('October to December 2026: Spreadsheets', 'fall'), ('January to April 2027: Python, Gemini and presentations', 'spring')]
+LOGO = 'data:image/png;base64,' + base64.b64encode((R / 'assets/brand/north-star-academy.png').read_bytes()).decode()
 NOTES = [('How to submit', 'submission'), ('Breaks', 'breaks'), ('Gemini', 'gemini'), ('Privacy', 'privacy')]
 
 
@@ -25,6 +27,7 @@ def notes(pairs):
 html = f'''<!doctype html><html><head><meta charset="utf-8"><title>North Star Summit 2026-27 Syllabus</title><style>
 @page {{ size: letter; margin: 0.6in 0.65in; }}
 body {{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #1f2933; line-height: 1.4; }}
+.logo {{ height: 30pt; display: block; margin: 0 0 12pt; }}
 h1 {{ font-size: 18pt; margin: 0 0 2pt; color: #12355b; }}
 .byline {{ color: #52606d; margin: 0 0 10pt; }}
 h2 {{ font-size: 12.5pt; color: #12355b; margin: 16pt 0 6pt; break-after: avoid; }}
@@ -39,6 +42,7 @@ p {{ margin: 6pt 0; }}
 a {{ color: #1d5fa8; }}
 .spring {{ break-before: page; }}
 </style></head><body>
+<img class="logo" src="{LOGO}" alt="Uncommon Schools North Star">
 <h1>North Star Summit 2026-27: Data Science</h1>
 <p class="byline">Syllabus and schedule · Mr. Hayward · george@haywarddatascience.com<br>{escape(s['intro'])}</p>
 <p>{escape(s['setup'])}</p>
