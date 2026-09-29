@@ -363,7 +363,8 @@
     "questionsForm": "https://docs.google.com/forms/d/e/1FAIpQLSd5oYU9PwcP2zHgxYy0k-j4pDuNn2rBMx5Bqbd4aAuV3suaUQ/viewform",
     "openingSlidesEditor": "https://docs.google.com/presentation/d/1QExOPRecLlneN5-e9iV3lPRdvVNh24we0VQTCA12ZnQ/edit",
     "gemini": "https://gemini.google.com/app",
-    "controlsCsv": null
+    "controlsCsv": null,
+    "geminiPrompt": "For this conversation, please be my data analysis helper. Work only with Mr. Hayward's public weight data at this link: https://raw.githubusercontent.com/ghayward/hayward_public_data/e2443fa8eb4b91f526657deeceedf5ce81616327/data/mr_hayward_weight.csv It is a CSV file with one row per day and five columns: date, weight (in pounds), day_of_week, is_weekend and is_holiday. Before anything else, open the file and tell me how many rows and columns you read and the first and last date, so I can check you really opened it. Whenever you give me a number, show the formula or Python code you used so I can check it myself. If you cannot open the link or are not sure, say so instead of guessing. Then wait for my first question."
   },
   "submissionNote": "Each lesson has its own Google Form. Type your answers and paste the link to your work. The Form receipt is your submission confirmation.",
   "endDate": "2027-04-15",
