@@ -11,8 +11,8 @@
       "id": "welcome",
       "title": "Meet Mr. Hayward. What is data science?",
       "month": "October",
-      "live": "2026-10-15",
-      "due": "2026-10-22",
+      "live": "2026-10-22",
+      "due": "2026-11-05",
       "phase": 1,
       "focus": "Start with the slides, meet your classmates, and tell us what you want to learn.",
       "objective": "Describe data science in your own words and set a personal learning goal.",
@@ -32,14 +32,14 @@
       ],
       "workKind": null,
       "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfNeFv-J9OoBgzePD-twq8ZNgvC09WCTXPmCsY9qruyIHlXJg/viewform",
-      "questionsDue": "2026-10-22",
-      "feedbackDue": "2026-11-05"
+      "questionsDue": "2026-11-05",
+      "feedbackDue": "2026-11-12"
     },
     {
       "id": "A01",
       "title": "Explore Mr. Hayward’s weight in Sheets",
       "month": "October–December",
-      "live": "2026-10-15",
+      "live": "2026-10-22",
       "due": "2026-12-03",
       "focus": "Open your own student Sheet. It contains the data and questions, with blank spaces for your formulas and explanations.",
       "objective": "Use COUNT, MEDIAN, AVERAGE, MIN, MAX and a conditional average to answer questions reproducibly.",
@@ -53,7 +53,7 @@
         "Explain one formula and the range it uses."
       ],
       "deliverable": "Six spreadsheet results, formulas and your explanation. Submit your answers and Sheet link in the assignment Form.",
-      "practice": "Your teachers will give you a personal copy of the blank student Sheet. Use the Data tab to answer the six questions in My work. Submit a first attempt by November 5, review feedback at the November 12 workshop, and finish by December 3. Try either or both optional bonuses during November.",
+      "practice": "Your teachers will give you a personal copy of the blank student Sheet. Use the Data tab to answer the six questions in My work. Send your first questions by November 5, bring them to the November 12 workshop, submit a first attempt by November 18, and finish by December 3. Try either or both optional bonuses in November.",
       "check": "Your formulas refer to the Data tab. Your teachers can open your personal Sheet.",
       "source": "S04, S06, S12",
       "notebook": "setup",
@@ -71,24 +71,28 @@
         }
       ],
       "submissionUrl": null,
-      "questionsDue": "2026-11-18",
+      "questionsDue": "2026-11-30",
       "feedbackDue": "2026-12-10",
       "checkpoints": [
         {
-          "date": "2026-10-22",
-          "label": "Send initial questions before assessment week"
-        },
-        {
           "date": "2026-11-05",
-          "label": "Submit your first spreadsheet attempt"
+          "label": "Submit your goals and first spreadsheet questions"
         },
         {
           "date": "2026-11-12",
-          "label": "Feedback and optional bonus workshop"
+          "label": "Spreadsheet check-in and optional bonus workshop"
         },
         {
           "date": "2026-11-18",
-          "label": "Send final spreadsheet questions"
+          "label": "Submit your first spreadsheet attempt"
+        },
+        {
+          "date": "2026-11-24",
+          "label": "Mr. Hayward returns feedback on your first attempt"
+        },
+        {
+          "date": "2026-11-30",
+          "label": "Send any remaining spreadsheet or bonus questions"
         },
         {
           "date": "2026-12-03",
@@ -96,7 +100,7 @@
         },
         {
           "date": "2026-12-10",
-          "label": "Teacher feedback returned"
+          "label": "Final spreadsheet feedback returned"
         }
       ]
     },
@@ -354,7 +358,7 @@
     "submissionForm": null,
     "sheetTemplate": "https://docs.google.com/spreadsheets/d/1QBAGrgaNWUS7YinpR976u3cR32N405f7Vzr9bKs29-s/copy",
     "notebookTemplate": "https://colab.research.google.com/drive/1YjEQwhHYvVW3valn4YhemwHCK0EwqEJx",
-    "syllabusDoc": "https://docs.google.com/document/d/1rPPVmQCbHwy0VSqkmJIO2FfWK2ggGHhQ9W78hZqFelQ/edit",
+    "syllabusDoc": "https://docs.google.com/document/d/1hEfom1ZGWgO2C4vrKNXtoCbb9qQjj40rVSyzmnMvb9w/edit",
     "syllabusPdf": "https://www.haywarddatascience.com/summit2026_2027/syllabus.pdf",
     "questionsForm": null,
     "openingSlidesEditor": "https://docs.google.com/presentation/d/1QExOPRecLlneN5-e9iV3lPRdvVNh24we0VQTCA12ZnQ/edit"
@@ -363,8 +367,8 @@
   "endDate": "2027-04-15",
   "workshops": [
     {
-      "date": "2026-10-15",
-      "title": "Meet the class and start Sheets",
+      "date": "2026-10-22",
+      "title": "Kickoff: meet the class and start Sheets",
       "modules": [
         "welcome",
         "A01"
@@ -373,7 +377,7 @@
     },
     {
       "date": "2026-11-12",
-      "title": "Spreadsheet feedback and optional bonuses",
+      "title": "Spreadsheet check-in and optional bonuses",
       "modules": [
         "A01"
       ],
