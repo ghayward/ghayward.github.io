@@ -36,8 +36,9 @@ forms=json.loads((R/'curriculum/forms.json').read_text())
 assert {f['id'] for f in forms}=={m['id'] for m in c['modules']}|{'questions'}
 for f in forms:
     if f['id'] in ['A02','A03','A04','A05']:
-        m=next(x for x in c['modules'] if x['id']==f['id'])
-        assert len([q for q in f['fields'] if 'paste the Python code' in q['title']])==len(m['questions'])
+        # Require code for calculations/charts; prose explanations get their own answer field.
+        expected_code_fields={'A02':6,'A03':1,'A04':3,'A05':2}
+        assert len([q for q in f['fields'] if 'paste the Python code' in q['title']])==expected_code_fields[f['id']]
 # A future accidental roster must fail before any generated files can be written.
 with tempfile.TemporaryDirectory() as temp:
     root = Path(temp)

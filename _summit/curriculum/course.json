@@ -70,7 +70,7 @@
           "text": "Build a small lookup table with one row for each weekday and its mean weight. Use VLOOKUP with an exact match (FALSE) to return the mean for a chosen weekday. Check it against a filtered average."
         }
       ],
-      "submissionUrl": null,
+      "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd20O3CxDQYRJl70sJHncPg-EBKV6_c2c_et69IQ6Du8JgoSw/viewform",
       "questionsDue": "2026-11-30",
       "feedbackDue": "2026-12-10",
       "checkpoints": [
@@ -132,7 +132,7 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null,
+      "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdZVt-uwMfKFO__K7-_AwBBzxuPDbIDvCke_FGMrlDPIm7-Bg/viewform",
       "questionsDue": "2027-01-28",
       "feedbackDue": "2027-02-11"
     },
@@ -159,7 +159,7 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null,
+      "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfp7HWVjZFipx1_nTO2CAddaatULRWNrwS4lLfEiqUppYr16Q/viewform",
       "questionsDue": "2027-02-11",
       "feedbackDue": "2027-02-25"
     },
@@ -185,7 +185,7 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null,
+      "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeeOolzhygs0znGnMaMXmBs6MzuDIv1pOdVxyvLn0s-pgGsew/viewform",
       "questionsDue": "2027-02-11",
       "feedbackDue": "2027-02-25"
     },
@@ -213,7 +213,7 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null,
+      "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvXblF8a8FXi3I5klwbAGP-xnwou5q1-q-haUdBQnWDty99w/viewform",
       "questionsDue": "2027-03-04",
       "feedbackDue": "2027-03-18"
     },
@@ -241,7 +241,7 @@
       ],
       "phase": 2,
       "workKind": "notebook",
-      "submissionUrl": null,
+      "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdh-f6e9awcGCsan6XFlknD_0CMebF6yIgHn5FEonDdfATJGg/viewform",
       "questionsDue": "2027-03-04",
       "feedbackDue": "2027-03-18"
     },
@@ -270,7 +270,7 @@
         "data"
       ],
       "workKind": "notebook",
-      "submissionUrl": null,
+      "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfrTlOlHbE7IWQp_w4rbBM-O0yuT4VACplIB3f7s5pJQgXtTw/viewform",
       "questionsDue": "2027-03-19",
       "feedbackDue": "2027-04-12"
     },
@@ -296,7 +296,7 @@
       "resources": [],
       "phase": 3,
       "workKind": "notebook",
-      "submissionUrl": null,
+      "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdily8B4HdTp5HgJNpYy40T8ypkuICNpMt-ITaltjWpoYa5UQ/viewform",
       "questionsDue": "2027-04-08",
       "feedbackDue": "2027-04-19",
       "checkpoints": [
@@ -360,7 +360,7 @@
     "notebookTemplate": "https://colab.research.google.com/drive/1YjEQwhHYvVW3valn4YhemwHCK0EwqEJx",
     "syllabusDoc": "https://docs.google.com/document/d/1hEfom1ZGWgO2C4vrKNXtoCbb9qQjj40rVSyzmnMvb9w/edit",
     "syllabusPdf": "https://www.haywarddatascience.com/summit2026_2027/syllabus.pdf",
-    "questionsForm": null,
+    "questionsForm": "https://docs.google.com/forms/d/e/1FAIpQLSd5oYU9PwcP2zHgxYy0k-j4pDuNn2rBMx5Bqbd4aAuV3suaUQ/viewform",
     "openingSlidesEditor": "https://docs.google.com/presentation/d/1QExOPRecLlneN5-e9iV3lPRdvVNh24we0VQTCA12ZnQ/edit"
   },
   "submissionNote": "Each lesson has its own Google Form. Type your answers and paste the link to your work. The Form receipt is your submission confirmation.",

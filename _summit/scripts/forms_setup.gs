@@ -34,11 +34,27 @@ function setupAssignmentForms() {
         if(field.type==='email')item.setValidation(FormApp.createTextValidation().requireTextIsEmail().build());
         if(field.type==='url')item.setValidation(FormApp.createTextValidation().requireTextIsUrl().build());
       });
-      form.setDescription(a.description+'\nSign in with your school Google account. Paste your answers and code here; a notebook link alone is not a submission. Keep your files restricted to you and your teachers. Submit again after revisions; the latest response is your current version.');
+      const instructions = a.id==='questions' ? '\nSign in with your school Google account. Describe your question or tell us you are on track. Your answers are private to the course teaching team.' : '\nSign in with your school Google account. Enter your answers below; where requested, paste code and its result. A file link alone is not a submission. Keep your files restricted to you and your teachers. Submit again after revisions; the latest response is your current version.';
+      form.setDescription(a.description+instructions);
       form.setCollectEmail(true).setLimitOneResponsePerUser(false).setAllowResponseEdits(false).setPublishingSummary(false).setShowLinkToRespondAgain(true);
       form.setConfirmationMessage('Your '+a.id+' answers have been submitted. Keep this confirmation as your receipt. Keep working in the same files; submit again after revisions.');
-      if(form.getDestinationId()!==destinationId)form.setDestination(FormApp.DestinationType.SPREADSHEET,destinationId);
-      if(form.supportsAdvancedResponderPermissions())form.setPublished(true);else form.setAcceptingResponses(true);
+      // getDestinationId throws on a new Form that has no destination yet.
+      let currentDestination = null; try { currentDestination = form.getDestinationId(); } catch (e) {}
+      if(currentDestination!==destinationId){form.setDestination(FormApp.DestinationType.SPREADSHEET,destinationId);SpreadsheetApp.flush();}
+      // A new destination can take a moment to register before Forms allows publishing.
+      for (let attempt = 1; ; attempt++) {
+        try {
+          form = FormApp.openById(id);
+          if(form.supportsAdvancedResponderPermissions())form.setPublished(true);else form.setAcceptingResponses(true);
+          break;
+        } catch (e) {
+          if (attempt >= 4) throw e;
+          console.log('Retrying publish for '+a.id+' after: '+e.message);
+          Utilities.sleep(3000*attempt);
+        }
+      }
+      if (form.getItems().length!==a.fields.length || !form.collectsEmail() || form.isPublishingSummary() || !form.isAcceptingResponses()) throw new Error('Form verification failed: '+a.id);
+      console.log('CREATED '+JSON.stringify({id:a.id,editor:form.getEditUrl(),respondent:form.getPublishedUrl(),fields:form.getItems().length}));
       result[a.id]=form.getPublishedUrl();
       registry.getRange(index+2,1,1,4).setValues([[a.id,form.getPublishedUrl(),form.getEditUrl(),'Created — check responder access with a school account']]);
     });

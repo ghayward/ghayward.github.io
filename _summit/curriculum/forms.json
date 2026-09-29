@@ -42,35 +42,31 @@
         "type": "text"
       },
       {
-        "title": "School email",
-        "type": "email"
-      },
-      {
         "title": "Submission stage: first attempt, final submission or revision",
         "type": "text"
       },
       {
-        "title": "How many observations are in the data?",
+        "title": "How many observations are in the data? Include your result and the Sheet formula you used.",
         "type": "paragraph"
       },
       {
-        "title": "What is the median weight?",
+        "title": "What is the median weight? Include your result and the Sheet formula you used.",
         "type": "paragraph"
       },
       {
-        "title": "What is the average weight?",
+        "title": "What is the average weight? Include your result and the Sheet formula you used.",
         "type": "paragraph"
       },
       {
-        "title": "What is the lowest weight?",
+        "title": "What is the lowest weight? Include your result and the Sheet formula you used.",
         "type": "paragraph"
       },
       {
-        "title": "What is the highest weight?",
+        "title": "What is the highest weight? Include your result and the Sheet formula you used.",
         "type": "paragraph"
       },
       {
-        "title": "What is the average weight on weekends?",
+        "title": "What is the average weight on weekends? Include your result and the Sheet formula you used.",
         "type": "paragraph"
       },
       {
@@ -92,7 +88,7 @@
         "required": false
       }
     ],
-    "publishedUrl": null
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd20O3CxDQYRJl70sJHncPg-EBKV6_c2c_et69IQ6Du8JgoSw/viewform"
   },
   {
     "id": "A02",
@@ -102,10 +98,6 @@
       {
         "title": "Your name",
         "type": "text"
-      },
-      {
-        "title": "School email",
-        "type": "email"
       },
       {
         "title": "Submission stage: first attempt, final submission or revision",
@@ -164,10 +156,6 @@
         "type": "paragraph"
       },
       {
-        "title": "Question 7: paste the Python code you ran, then its output or result.",
-        "type": "paragraph"
-      },
-      {
         "title": "Your Colab notebook link",
         "type": "url"
       },
@@ -177,7 +165,7 @@
         "required": false
       }
     ],
-    "publishedUrl": null
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdZVt-uwMfKFO__K7-_AwBBzxuPDbIDvCke_FGMrlDPIm7-Bg/viewform"
   },
   {
     "id": "A03",
@@ -187,10 +175,6 @@
       {
         "title": "Your name",
         "type": "text"
-      },
-      {
-        "title": "School email",
-        "type": "email"
       },
       {
         "title": "Submission stage: first attempt, final submission or revision",
@@ -209,10 +193,6 @@
         "type": "paragraph"
       },
       {
-        "title": "Question 2: paste the Python code you ran, then its output or result.",
-        "type": "paragraph"
-      },
-      {
         "title": "Your Colab notebook link",
         "type": "url"
       },
@@ -222,7 +202,7 @@
         "required": false
       }
     ],
-    "publishedUrl": null
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfp7HWVjZFipx1_nTO2CAddaatULRWNrwS4lLfEiqUppYr16Q/viewform"
   },
   {
     "id": "A03R",
@@ -232,10 +212,6 @@
       {
         "title": "Your name",
         "type": "text"
-      },
-      {
-        "title": "School email",
-        "type": "email"
       },
       {
         "title": "Submission stage: first attempt, final submission or revision",
@@ -263,7 +239,7 @@
         "required": false
       }
     ],
-    "publishedUrl": null
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeeOolzhygs0znGnMaMXmBs6MzuDIv1pOdVxyvLn0s-pgGsew/viewform"
   },
   {
     "id": "A04",
@@ -273,10 +249,6 @@
       {
         "title": "Your name",
         "type": "text"
-      },
-      {
-        "title": "School email",
-        "type": "email"
       },
       {
         "title": "Submission stage: first attempt, final submission or revision",
@@ -316,7 +288,7 @@
         "required": false
       }
     ],
-    "publishedUrl": null
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLScvXblF8a8FXi3I5klwbAGP-xnwou5q1-q-haUdBQnWDty99w/viewform"
   },
   {
     "id": "A05",
@@ -326,10 +298,6 @@
       {
         "title": "Your name",
         "type": "text"
-      },
-      {
-        "title": "School email",
-        "type": "email"
       },
       {
         "title": "Submission stage: first attempt, final submission or revision",
@@ -345,10 +313,6 @@
       },
       {
         "title": "Why might giving only that average be misleading?",
-        "type": "paragraph"
-      },
-      {
-        "title": "Question 2: paste the Python code you ran, then its output or result.",
         "type": "paragraph"
       },
       {
@@ -369,7 +333,7 @@
         "required": false
       }
     ],
-    "publishedUrl": null
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdh-f6e9awcGCsan6XFlknD_0CMebF6yIgHn5FEonDdfATJGg/viewform"
   },
   {
     "id": "AI",
@@ -379,10 +343,6 @@
       {
         "title": "Your name",
         "type": "text"
-      },
-      {
-        "title": "School email",
-        "type": "email"
       },
       {
         "title": "Submission stage: first attempt, final submission or revision",
@@ -430,7 +390,7 @@
         "required": false
       }
     ],
-    "publishedUrl": null
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfrTlOlHbE7IWQp_w4rbBM-O0yuT4VACplIB3f7s5pJQgXtTw/viewform"
   },
   {
     "id": "A06",
@@ -440,10 +400,6 @@
       {
         "title": "Your name",
         "type": "text"
-      },
-      {
-        "title": "School email",
-        "type": "email"
       },
       {
         "title": "Submission stage: first attempt, final submission or revision",
@@ -479,7 +435,7 @@
         "required": false
       }
     ],
-    "publishedUrl": null
+    "publishedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdily8B4HdTp5HgJNpYy40T8ypkuICNpMt-ITaltjWpoYa5UQ/viewform"
   },
   {
     "id": "questions",
@@ -489,10 +445,6 @@
       {
         "title": "Your name",
         "type": "text"
-      },
-      {
-        "title": "School email",
-        "type": "email"
       },
       {
         "title": "Assignment or topic",
