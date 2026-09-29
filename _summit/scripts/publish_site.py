@@ -3,6 +3,7 @@
 Run from website/_summit. This only stages files; it does not commit or push.
 """
 from pathlib import Path
+import html
 import shutil
 import subprocess
 import sys
@@ -19,6 +20,13 @@ for filename in ['index.html', 'assets/north-star-academy.png']:
     shutil.copy2(ROOT / 'hub' / filename, destination / filename)
 for filename in ['syllabus.pdf', 'opening-slides.pdf']:
     shutil.copy2(ROOT / 'docs' / filename, destination / filename)
+# Public teaching data: a CSV that downloads in one click and a plain page that AI tools can read.
+data = (ROOT / 'curriculum/data/mr_hayward_weight.csv').read_text()
+(destination / 'mr_hayward_weight.csv').write_text(data)
+(destination / 'data.html').write_text('<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
+    '<title>Mr. Hayward weight data (CSV)</title></head><body><h1>Mr. Hayward weight data</h1>'
+    '<p>Public teaching data for North Star Summit 2026-27. 2,001 daily rows, 5 columns. CSV text below. '
+    '<a href="mr_hayward_weight.csv">Download the CSV file</a>.</p><pre>' + html.escape(data) + '</pre></body></html>\n')
 alias = SITE / 'summit'
 alias.mkdir(exist_ok=True)
 (alias / 'index.html').write_text('''<!doctype html>
