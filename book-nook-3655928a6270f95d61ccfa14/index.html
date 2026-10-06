@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive"><meta name="referrer" content="no-referrer"><title>Mom’s Books · Price checks</title>
+<style>
+:root{--pink:#f58ef5;--yellow:#f7e5b3;--ink:#302533;--muted:#665c69;--paper:#fffcff;--line:#ded5df}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:19px/1.55 'Trebuchet MS',Arial,sans-serif}header{background:var(--pink);padding:24px max(24px,calc((100vw - 960px)/2));display:flex;gap:18px;align-items:center}header strong{font:700 29px Georgia,serif}header span{font-size:16px}main{max-width:960px;margin:48px auto;padding:0 24px}h1{font:normal clamp(36px,6vw,54px)/1.12 Georgia,serif;max-width:650px;margin:0 0 20px}h2{font:normal 27px Georgia,serif;margin:0 0 14px}p{margin:0 0 20px;max-width:650px}.intro{color:var(--muted)}.preview{font-size:16px;border-left:4px solid #905290;padding:10px 16px;background:#f9edf9;margin-bottom:32px}.workspace{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:start}.check{border:1px solid var(--line);border-radius:12px;padding:26px}.results{background:var(--yellow);padding:26px;border-radius:4px 20px 20px 4px}button,.link{font:700 18px/1.35 'Trebuchet MS',Arial,sans-serif;display:inline-block;border-radius:8px;padding:16px 20px;min-height:56px}button{border:0;background:#e7dfe8;color:#5d5460;width:100%;cursor:not-allowed}.link{color:white;background:#613660;text-decoration:none}.link:hover{background:#452344}.link:focus-visible,select:focus-visible{outline:3px solid #1665b2;outline-offset:5px}.small{font-size:16px;color:var(--muted);margin-top:14px}.status{font-weight:bold;font-size:22px}.history{margin-top:42px}.row{display:flex;justify-content:space-between;gap:20px;padding:17px 0;border-bottom:1px solid var(--line);font-size:17px}.row span:last-child{text-align:right}.foot{font-size:16px;color:var(--muted);margin-top:32px}#notice{color:#7b263e}select{font:inherit;max-width:100%;padding:8px;border:1px solid var(--line);background:white;border-radius:5px}details{margin-top:30px;font-size:16px}summary{cursor:pointer}details p{margin-top:12px}[hidden]{display:none!important}@media(max-width:680px){main{margin:30px auto}.workspace{grid-template-columns:1fr;gap:20px}header{flex-wrap:wrap;gap:4px 16px}.row{display:block}.row span{display:block}.row span:last-child{text-align:left;color:var(--muted)}}
+</style>
+</head>
+<body>
+<header><strong>Mom’s Books</strong><span>Your book price checks</span></header>
+<main>
+<p class="preview">Your book review page · Online price checks are being connected. You can open your Google Sheet below.</p>
+<h1>A fresh look at your book prices.</h1>
+<p class="intro">Check for books worth a closer look, then review them in your familiar Google Sheet.</p>
+<div class="workspace">
+<section class="check" aria-labelledby="check-heading"><h2 id="check-heading">Your price check</h2>
+<div aria-live="polite"><p class="status" id="status">Online checks are coming soon</p><p id="message">For now, George runs the price check. Your results are in the Google Sheet.</p></div>
+<button disabled>Check my book prices</button><p class="small">Available once hosting is connected. A full check usually takes about 60–90 minutes.</p></section>
+<section class="results"><h2>Your Google Sheet</h2><p id="verified">Open your current book review list. Check the dates in the sheet to see when it was updated.</p><a id="sheet" class="link" href="https://docs.google.com/spreadsheets/d/1xvLCBiMAJdrwPbtsvyRVnIZJz_GMhrrMYyVk9U2wpjE/edit#gid=510543676" target="_blank" rel="noopener noreferrer">Open my results</a><p id="notice" class="small"></p><p class="small">Keep adding your notes in the sheet, just as you do today.</p></section>
+</div>
+<p class="foot">This checks asking prices and prepares a review list. It does not change your Amazon prices.</p>
+</main>
+
+</body></html>
