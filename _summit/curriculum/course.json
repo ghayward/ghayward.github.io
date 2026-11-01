@@ -41,7 +41,7 @@
       "month": "October–December",
       "live": "2026-10-22",
       "due": "2026-12-03",
-      "focus": "Open your own student Sheet. It contains the data and questions, with blank spaces for your formulas and explanations.",
+      "focus": "Open your personal Sheet, named [YOUR NAME]_mr_hayward_weight. The first tab, mr_hayward_weight, holds the data. The Example tab shows a worked answer, and the Question 1, Question 2, Question 3 and Bonus tabs each have a yellow cell waiting for yours.",
       "objective": "Use COUNT, MEDIAN, AVERAGE, MIN, MAX and a conditional average to answer questions reproducibly.",
       "questions": [
         "How many observations are in the data?",
@@ -52,9 +52,9 @@
         "What is the average weight on weekends?",
         "Explain one formula and the range it uses."
       ],
-      "deliverable": "Six spreadsheet results, formulas and your explanation. Submit your answers and Sheet link in the assignment Form.",
-      "practice": "Your teachers will give you a personal copy of the blank student Sheet. Use the Data tab to answer the six questions in My work. Send your first questions by November 5, bring them to the November 12 workshop, submit a first attempt by November 18, and finish by December 3. Try either or both optional bonuses in November.",
-      "check": "Your formulas refer to the Data tab. Your teachers can open your personal Sheet.",
+      "deliverable": "Six spreadsheet results (the count from the Example tab plus your five Question answers), the formulas you used, and your explanation. Submit your answers and Sheet link in the assignment Form.",
+      "practice": "Mr. Hayward shared your personal Sheet with your school Google account, and your link is in his November 1 email. Start with the Example tab, which shows a worked answer, then put a formula that references the mr_hayward_weight tab in each yellow cell: Question 1 (median and average), Question 2 (lowest and highest) and Question 3 (average on weekends). Send your first questions by November 5, bring them to the November 12 workshop, submit a first attempt by November 18, and finish by December 3. If a formula has you stuck, a typed answer is OK for now; bring the question to the workshop. The Bonus tab and the optional VLOOKUP challenge are for November.",
+      "check": "Where you can, each yellow cell holds a formula that points at the mr_hayward_weight tab instead of a typed number. Your teachers can open your personal Sheet.",
       "source": "S04, S06, S12",
       "notebook": "setup",
       "resources": [],
@@ -63,11 +63,11 @@
       "bonuses": [
         {
           "title": "Bonus 1 · Spot a weight-gain streak",
-          "text": "Define a streak: consecutive recorded observations or consecutive calendar days? Decide what happens when a day is missing or the weight stays equal. Then try finding the longest streak. This optional extension adapts the historical streak challenge."
+          "text": "Your Sheet's Bonus tab asks for the longest weight-gain streak. Decide first: consecutive recorded observations or consecutive calendar days? What happens when a day is missing or the weight stays equal? Write your reasoning in the second yellow box even if you do not finish the count. Spend no more than 20 minutes."
         },
         {
           "title": "Bonus 2 · Try VLOOKUP",
-          "text": "Build a small lookup table with one row for each weekday and its mean weight. Use VLOOKUP with an exact match (FALSE) to return the mean for a chosen weekday. Check it against a filtered average."
+          "text": "Add a new tab to your Sheet. Build a small lookup table with one row for each weekday and its mean weight. Use VLOOKUP with an exact match (FALSE) to return the mean for a chosen weekday. Check it against a filtered average."
         }
       ],
       "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd20O3CxDQYRJl70sJHncPg-EBKV6_c2c_et69IQ6Du8JgoSw/viewform",
@@ -110,7 +110,7 @@
       "month": "January",
       "live": "2027-01-14",
       "due": "2027-02-04",
-      "focus": "Solve the same questions in code.",
+      "focus": "Solve the same questions in code, in your personal Colab notebook.",
       "objective": "Use pandas methods and Boolean filtering; distinguish a computed result from a typed answer.",
       "questions": [
         "What is the lowest weight?",
@@ -122,7 +122,7 @@
         "Explain one Boolean filter in your code."
       ],
       "deliverable": "Executed Python answers to six questions, with one sentence explaining a filter. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
-      "practice": "Work through A02 in your notebook. Compare Python results with your spreadsheet. Save the outputs.",
+      "practice": "Open your personal notebook, named [YOUR NAME]_mr_hayward_weight.ipynb, and run the cells from the top: import pandas, load the data, look at a sample. Questions 1a and 1b (median and average) are already answered as examples. Write code in each cell marked '#code here' for 2a lowest, 2b highest, 2c max minus min rounded, 3a earliest date, 3b latest date and 3c the latest holiday. Compare every result with your Sheet and keep the outputs visible.",
       "check": "Restart and run all cells. Explain ==, a Boolean, and one method used.",
       "source": "S04, S06, S08",
       "notebook": "A02",
@@ -149,7 +149,7 @@
         "Which statistic answers that question, and why?"
       ],
       "deliverable": "A draft table for all seven weekdays and a justified choice of statistic. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
-      "practice": "Read the weekday example. Produce a count and mean for each weekday; try min and max too.",
+      "practice": "Your notebook has no weekday section yet, so add a text cell titled A03 at the bottom and work under it. Read the weekday example in Segment 1 of the analysis examples notebook, then produce a count and mean for each weekday; try min and max too.",
       "check": "Explain why the weekday with the lowest minimum need not have the lowest mean.",
       "source": "S05, S13",
       "notebook": "A03",
@@ -176,7 +176,7 @@
         "What is a plausible hypothesis, and what additional data would test it?"
       ],
       "deliverable": "A 150–250 word work-style email or letter to your teacher: subject, greeting, finding, evidence, limitation and next question. Paste the complete letter into the Form and keep a copy in your notebook.",
-      "practice": "Write an email to Mr. Hayward explaining which weekday tends to have the lowest weight. Use the same numbers as your analysis. Paste the draft into the assignment Form; you do not need to send an email.",
+      "practice": "Write an email to Mr. Hayward explaining which weekday tends to have the lowest weight. Use the same numbers as your A03 analysis. Paste the draft into the assignment Form and keep a copy in a text cell under A03 in your notebook; you do not need to send an email.",
       "check": "Lead with the finding. Match the numbers to your notebook and label hypotheses as hypotheses.",
       "source": "S05, S08, S13",
       "notebook": "A03",
@@ -203,7 +203,7 @@
         "How does it compare with weekdays, given different sample sizes?"
       ],
       "deliverable": "A labeled weekend histogram and a short comparison with weekdays in the notebook. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
-      "practice": "Make the weekend chart, use common bins for comparison, and report the observation count in each group.",
+      "practice": "Add a section titled A04 at the bottom of your notebook. Follow Segment 2 of the analysis examples notebook: make the weekend chart, use common bins for comparison, and report the observation count in each group.",
       "check": "Chart title and axes identify the subset and units. Do not interpret fewer observations as lower weight.",
       "source": "S05, S08",
       "notebook": "A04",
@@ -231,7 +231,7 @@
         "What pattern is visible when the observations are ordered by time?"
       ],
       "deliverable": "A dated time-series chart, computed overall mean, and an explanation linked to code. Paste the code you used and its result into the assignment Form, as well as your notebook link.",
-      "practice": "After the histogram, make a chart with real dates on the horizontal axis. Compare what it shows with the single overall mean.",
+      "practice": "Add a section titled A05 below A04. Follow Segment 3 of the analysis examples notebook: make a chart with real dates on the horizontal axis. Compare what it shows with the single overall mean.",
       "check": "Date axis reflects real dates. Written claims name the relevant time period and avoid unsupported causes.",
       "source": "S05, S09",
       "notebook": "A05",
@@ -329,21 +329,21 @@
       "title": "View the data on GitHub",
       "kind": "Data",
       "url": "https://github.com/ghayward/hayward_public_data/blob/e2443fa8eb4b91f526657deeceedf5ce81616327/data/mr_hayward_weight.csv",
-      "note": "Already included in your Sheet. Colab reads the same data directly."
+      "note": "Already in your Sheet's mr_hayward_weight tab. Your notebook loads the same file."
     },
     {
       "id": "bridge",
-      "title": "Spreadsheet-to-Python examples",
+      "title": "Master copy of your notebook",
       "kind": "Prior-year notebook",
       "url": "https://colab.research.google.com/drive/1bdIGQRykuI8ZgPGRQ-GPwsVREaX7Kwgd",
-      "note": "Reference only. Follow this year’s lesson for deadlines."
+      "note": "Your personal Colab notebook is a copy of this one. Work in your own copy, not here."
     },
     {
       "id": "segments",
       "title": "Analysis examples and explanations",
       "kind": "Prior-year notebook",
       "url": "https://colab.research.google.com/drive/1aXo1JePAZISP8Km46ErnGVv_fg47SYpX",
-      "note": "Reference only. Use the revised starter for date plotting."
+      "note": "Worked examples for A03 to A05: weekday slices (Segment 1), histograms (Segment 2) and time series (Segment 3)."
     },
     {
       "id": "histogram",
@@ -356,8 +356,8 @@
   "links": {
     "currentSlides": "https://docs.google.com/presentation/d/1PgM5GFzzU_Xf_-7YkQ_gYIc4bVAvh2JbOmQfQY9DOCU/edit",
     "submissionForm": null,
-    "sheetTemplate": "https://docs.google.com/spreadsheets/d/1QBAGrgaNWUS7YinpR976u3cR32N405f7Vzr9bKs29-s/copy",
-    "notebookTemplate": "https://colab.research.google.com/drive/1YjEQwhHYvVW3valn4YhemwHCK0EwqEJx",
+    "sheetTemplate": "https://docs.google.com/spreadsheets/d/1t65ggUWo_yzwWZi8RFrNxqwWomLtbcnDmLclJLZE4-o/copy",
+    "notebookTemplate": "https://colab.research.google.com/drive/1bdIGQRykuI8ZgPGRQ-GPwsVREaX7Kwgd",
     "syllabusDoc": "https://docs.google.com/document/d/1hEfom1ZGWgO2C4vrKNXtoCbb9qQjj40rVSyzmnMvb9w/edit",
     "syllabusPdf": "https://www.haywarddatascience.com/summit2026_2027/syllabus.pdf",
     "questionsForm": "https://docs.google.com/forms/d/e/1FAIpQLSd5oYU9PwcP2zHgxYy0k-j4pDuNn2rBMx5Bqbd4aAuV3suaUQ/viewform",
