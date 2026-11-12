@@ -345,7 +345,7 @@ svg text{font-family:Arial,Helvetica,sans-serif}
 <div id="prog"></div>
 </div></div>
 
-<div id="nav"><button id="prev">← Back</button><button id="next">Next →</button></div>
+
 
 <div id="panel"><div class="box">
   <b style="font-size:20px">Build the word cloud</b>
@@ -412,7 +412,7 @@ stage.addEventListener('click',e=>{ if(e.target.closest('a,button,.w'))return; (
 let tx=null;
 addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
 addEventListener('touchend',e=>{if(tx===null)return;const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)(d<0?next:prev)();tx=null;});
-document.getElementById('next').onclick=next;document.getElementById('prev').onclick=prev;
+
 
 /* ---------- charts ---------- */
 const NS='http://www.w3.org/2000/svg';
@@ -517,10 +517,7 @@ function save(){try{localStorage.setItem('summit_cloud_v1',JSON.stringify(CLOUD)
 HOOK.cloud=function(){ buildCloud(); };
 function openPanel(){document.getElementById('panel').classList.add('on');setTimeout(()=>document.getElementById('ta').focus(),50);}
 function closePanel(){document.getElementById('panel').classList.remove('on');}
-/* nav buttons: hidden while presenting; show briefly on mouse movement, never in full screen */
-let navT=null;const nav=document.getElementById('nav');
-addEventListener('mousemove',()=>{if(document.fullscreenElement)return;nav.classList.add('show');clearTimeout(navT);navT=setTimeout(()=>nav.classList.remove('show'),2000);});
-document.addEventListener('fullscreenchange',()=>{if(document.fullscreenElement)nav.classList.remove('show');});
+
 document.getElementById('cancel').onclick=closePanel;
 document.getElementById('build').onclick=()=>{
   const ta=document.getElementById('ta');const c=countWords(ta.value);ta.value='';
