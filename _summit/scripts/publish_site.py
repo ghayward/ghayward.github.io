@@ -20,9 +20,13 @@ for filename in ['index.html', 'assets/north-star-academy.png']:
     shutil.copy2(ROOT / 'hub' / filename, destination / filename)
 for filename in ['syllabus.pdf', 'opening-slides.pdf']:
     shutil.copy2(ROOT / 'docs' / filename, destination / filename)
-# Click-through version of the opening talk (self-contained HTML deck).
+# Class talks: self-contained HTML decks, one dated folder per class (docs/YYYY-MM-DD-slug.html -> /YYYY-MM-DD-slug/).
+for deck in sorted((ROOT / 'docs').glob('20[0-9][0-9]-[0-9][0-9]-[0-9][0-9]-*.html')):
+    (destination / deck.stem).mkdir(exist_ok=True)
+    shutil.copy2(deck, destination / deck.stem / 'index.html')
+# Old undated address for the Nov 12, 2026 talk forwards to its dated folder.
 (destination / 'what-is-data-science').mkdir(exist_ok=True)
-shutil.copy2(ROOT / 'docs/what-is-data-science.html', destination / 'what-is-data-science/index.html')
+(destination / 'what-is-data-science/index.html').write_text('<!doctype html>\n<html lang="en"><head><meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>What\'s Data Science?</title>\n<meta http-equiv="refresh" content="0; url=/summit2026_2027/2026-11-12-what-is-data-science/">\n<link rel="canonical" href="https://www.haywarddatascience.com/summit2026_2027/2026-11-12-what-is-data-science/">\n</head><body><p><a href="/summit2026_2027/2026-11-12-what-is-data-science/">Open the November 12, 2026 talk</a></p></body></html>\n')
 # Public teaching data: a CSV that downloads in one click and a plain page that AI tools can read.
 data = (ROOT / 'curriculum/data/mr_hayward_weight.csv').read_text()
 (destination / 'mr_hayward_weight.csv').write_text(data)
