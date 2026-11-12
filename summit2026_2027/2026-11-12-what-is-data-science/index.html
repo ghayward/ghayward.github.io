@@ -140,8 +140,9 @@ svg text{font-family:Arial,Helvetica,sans-serif}
 .foot{position:absolute;left:40px;bottom:20px;font-size:18px;color:#999;z-index:3}
 /* ui */
 #prog{position:absolute;left:0;bottom:0;height:6px;background:var(--blue);transition:width .4s}
-#nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;opacity:.25;transition:opacity .3s;z-index:5}
-#nav:hover{opacity:1}
+#nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:10px;opacity:0;pointer-events:none;transition:opacity .4s;z-index:5}
+#nav.show{opacity:.85;pointer-events:auto}
+#nav.show:hover{opacity:1}
 #nav button{font:15px Arial;border:0;border-radius:20px;padding:8px 16px;background:#fff;color:#222;box-shadow:0 2px 8px rgba(0,0,0,.2);cursor:pointer}
 </style>
 </head>
@@ -316,7 +317,7 @@ svg text{font-family:Arial,Helvetica,sans-serif}
 <div id="prog"></div>
 </div></div>
 
-<div id="nav"><button id="prev">← Back</button><button id="next">Next →</button><button id="paste">Word cloud data</button></div>
+<div id="nav"><button id="prev">← Back</button><button id="next">Next →</button></div>
 
 <div id="panel"><div class="box">
   <b style="font-size:20px">Build the word cloud</b>
@@ -488,7 +489,10 @@ function save(){try{localStorage.setItem('summit_cloud_v1',JSON.stringify(CLOUD)
 HOOK.cloud=function(){ buildCloud(); };
 function openPanel(){document.getElementById('panel').classList.add('on');setTimeout(()=>document.getElementById('ta').focus(),50);}
 function closePanel(){document.getElementById('panel').classList.remove('on');}
-document.getElementById('paste').onclick=openPanel;
+/* nav buttons: hidden while presenting; show briefly on mouse movement, never in full screen */
+let navT=null;const nav=document.getElementById('nav');
+addEventListener('mousemove',()=>{if(document.fullscreenElement)return;nav.classList.add('show');clearTimeout(navT);navT=setTimeout(()=>nav.classList.remove('show'),2000);});
+document.addEventListener('fullscreenchange',()=>{if(document.fullscreenElement)nav.classList.remove('show');});
 document.getElementById('cancel').onclick=closePanel;
 document.getElementById('build').onclick=()=>{
   const ta=document.getElementById('ta');const c=countWords(ta.value);ta.value='';
