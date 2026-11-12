@@ -20,6 +20,9 @@ for filename in ['index.html', 'assets/north-star-academy.png']:
     shutil.copy2(ROOT / 'hub' / filename, destination / filename)
 for filename in ['syllabus.pdf', 'opening-slides.pdf']:
     shutil.copy2(ROOT / 'docs' / filename, destination / filename)
+# Click-through version of the opening talk (self-contained HTML deck).
+(destination / 'what-is-data-science').mkdir(exist_ok=True)
+shutil.copy2(ROOT / 'docs/what-is-data-science.html', destination / 'what-is-data-science/index.html')
 # Public teaching data: a CSV that downloads in one click and a plain page that AI tools can read.
 data = (ROOT / 'curriculum/data/mr_hayward_weight.csv').read_text()
 (destination / 'mr_hayward_weight.csv').write_text(data)
