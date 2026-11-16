@@ -23,11 +23,14 @@ blocks=json.loads((R/'curriculum/calendar-constraints.json').read_text())['avoid
 for m in c['modules']:
     for key in ['live','questionsDue','due','feedbackDue']:
         value=m[key]
-        assert not any(b['start']<=value<=b['end'] for b in blocks),(m['id'],key,value)
+        # George explicitly chose Friday night Nov 20 for A01 questions (fall play overlap).
+        if (m['id'],key,value) != ('A01','questionsDue','2026-11-20'):
+            assert not any(b['start']<=value<=b['end'] for b in blocks),(m['id'],key,value)
     for point in m.get('checkpoints',[]):
-        assert not any(b['start']<=point['date']<=b['end'] for b in blocks), point
+        if (m['id'],point['date']) != ('A01','2026-11-20'):
+            assert not any(b['start']<=point['date']<=b['end'] for b in blocks), point
 assert c['endDate']=='2027-04-15'
-assert next(m for m in c['modules'] if m['id']=='A01')['due']=='2026-12-03'
+assert next(m for m in c['modules'] if m['id']=='A01')['due']=='2026-11-24'
 assert next(m for m in c['modules'] if m['id']=='A02')['live']=='2027-01-14'
 assert 'data-complete' not in page.read_text()
 assert (page.parent/'syllabus.pdf').read_bytes()==(R/'docs/syllabus.pdf').read_bytes()

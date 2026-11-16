@@ -35,52 +35,19 @@
   {
     "id": "A01",
     "title": "Explore Mr. Hayward’s weight in Sheets",
-    "description": "Six spreadsheet results, formulas and your explanation. Submit your answers and Sheet link in the assignment Form.",
+    "description": "Do the homework in your own Google Sheet. Your answers stay in your Sheet. Then fill in this short Form and press Submit to turn it in.",
     "fields": [
       {
-        "title": "Your name",
+        "title": "First name",
         "type": "text"
       },
       {
-        "title": "Submission stage: first attempt, final submission or revision",
+        "title": "Last name",
         "type": "text"
       },
       {
-        "title": "How many observations are in the data? Include your result and the Sheet formula you used.",
-        "type": "paragraph"
-      },
-      {
-        "title": "What is the median weight? Include your result and the Sheet formula you used.",
-        "type": "paragraph"
-      },
-      {
-        "title": "What is the average weight? Include your result and the Sheet formula you used.",
-        "type": "paragraph"
-      },
-      {
-        "title": "What is the lowest weight? Include your result and the Sheet formula you used.",
-        "type": "paragraph"
-      },
-      {
-        "title": "What is the highest weight? Include your result and the Sheet formula you used.",
-        "type": "paragraph"
-      },
-      {
-        "title": "What is the average weight on weekends? Include your result and the Sheet formula you used.",
-        "type": "paragraph"
-      },
-      {
-        "title": "Explain one formula and the range it uses.",
-        "type": "paragraph"
-      },
-      {
-        "title": "Your Google Sheet link",
+        "title": "Link to your Google Sheet",
         "type": "url"
-      },
-      {
-        "title": "Optional bonus work: explain your streak or VLOOKUP result",
-        "type": "paragraph",
-        "required": false
       },
       {
         "title": "What would you like help with? (Optional)",
