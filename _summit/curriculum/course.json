@@ -54,7 +54,7 @@
         "Explain one formula and the range it uses."
       ],
       "deliverable": "Your finished Sheet, with the yellow cells on the Question 1, Question 2 and Question 3 tabs filled in. Your answers stay in your Sheet. Turn it in with the short homework Form: your name and your Sheet link.",
-      "practice": "Open your personal Sheet using the link in Mr. Hayward’s email, signed in with your school Google account. Review the mr_hayward_weight data tab and the worked Example tab. Then complete the yellow cells in Question 1 (median and average), Question 2 (lowest and highest), and Question 3 (average on weekends). Try formulas that reference the data tab. If you are stuck, show your attempt and tell us where you need help; a typed answer is OK for now. Send questions by Friday night, November 20. Turn it in with the short homework Form (your name and your Sheet link) by Tuesday, November 24, before Thanksgiving. The Bonus tab and VLOOKUP challenge are optional.",
+      "practice": "Open your personal Sheet using the link in Mr. Hayward’s email, signed in with your school Google account. Review the mr_hayward_weight data tab and the worked Example tab. Then complete the yellow cells in Question 1 (median and average), Question 2 (lowest and highest), and Question 3 (average on weekends). Try formulas that reference the data tab. If you are stuck, show your attempt and tell us where you need help; a typed answer is OK for now. Send questions by Saturday night, November 21. Turn it in with the short homework Form (your name and your Sheet link) by Tuesday, November 24, before Thanksgiving. The Bonus tab and VLOOKUP challenge are optional.",
       "check": "Where you can, each yellow cell holds a formula that points at the mr_hayward_weight tab instead of a typed number. Your teachers can open your personal Sheet.",
       "source": "S04, S06, S12",
       "notebook": "setup",
@@ -72,7 +72,7 @@
         }
       ],
       "submissionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSd20O3CxDQYRJl70sJHncPg-EBKV6_c2c_et69IQ6Du8JgoSw/viewform",
-      "questionsDue": "2026-11-20",
+      "questionsDue": "2026-11-21",
       "feedbackDue": "2026-12-10",
       "checkpoints": [
         {
@@ -84,8 +84,8 @@
           "label": "Spreadsheet check-in and optional bonus workshop"
         },
         {
-          "date": "2026-11-20",
-          "label": "Send questions by Friday night (Eastern time)"
+          "date": "2026-11-21",
+          "label": "Send questions by Saturday night (Eastern time)"
         },
         {
           "date": "2026-11-24",
