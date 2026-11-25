@@ -6,6 +6,13 @@
   "timezone": "America/New_York",
   "meetingTime": "Time to be confirmed with the school (Eastern time).",
   "currentModule": "A01",
+  "dueDates": [
+    {
+      "date": "2026-12-04",
+      "label": "Homework 1 due",
+      "lesson": "A01"
+    }
+  ],
   "modules": [
     {
       "id": "welcome",

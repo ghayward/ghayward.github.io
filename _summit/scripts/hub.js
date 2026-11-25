@@ -28,3 +28,34 @@ document.addEventListener('click',event=>{const a=event.target.closest('a[href^=
 
 document.getElementById('syllabus-files').innerHTML=link(COURSE.links.syllabusDoc,'Open the editable Google syllabus','button secondary')+link(COURSE.links.syllabusPdf,'View the syllabus PDF','button secondary');
 document.getElementById('questions-form').innerHTML=link(COURSE.links.questionsForm,'Ask a question or check in','button secondary');
+
+// Floating due-date calendar. Dates come from course.json "dueDates": [{"date":"YYYY-MM-DD","label":"Homework 1 due","lesson":"A01"}].
+// It shows the month of the next due date. A date drops off the day after it passes; with nothing upcoming there is no calendar.
+function renderCalendar(){
+  let today;try{today=new Intl.DateTimeFormat('en-CA',{timeZone:COURSE.timezone,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}catch{today=new Date().toISOString().slice(0,10);}
+  const items=(COURSE.dueDates||[]).filter(d=>/^\d{4}-\d\d-\d\d$/.test(d.date)&&d.date>=today).sort((a,b)=>a.date.localeCompare(b.date));
+  if(!items.length)return;
+  const day=s=>new Date(s+'T12:00:00').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+  const [year,month]=items[0].date.split('-').map(Number),prefix=items[0].date.slice(0,8);
+  const offset=new Date(year,month-1,1).getDay(),count=new Date(year,month,0).getDate();
+  let cells=['S','M','T','W','T','F','S'].map(x=>`<span class="dow">${x}</span>`).join('')+'<span></span>'.repeat(offset);
+  for(let n=1;n<=count;n++){const iso=prefix+String(n).padStart(2,'0');cells+=`<span class="${items.some(d=>d.date===iso)?'due':''}${iso===today?' today':''}">${n}</span>`;}
+  const list=items.slice(0,4).map(d=>{const text=`<b>${day(d.date)}</b> ${esc(d.label)}`;return `<li>${d.lesson&&document.getElementById('lesson-'+d.lesson)?`<a href="#lesson-${esc(d.lesson)}">${text}</a>`:text}</li>`;}).join('');
+  const box=document.createElement('aside');box.id='due-calendar';box.className='due-calendar';box.setAttribute('aria-label','Upcoming due dates');
+  box.innerHTML=`<button type="button" class="due-toggle" aria-controls="due-body"><span>Next due: ${day(items[0].date)}</span></button><div id="due-body" class="due-body"><p class="due-month">${new Date(year,month-1,1).toLocaleDateString('en-US',{month:'long',year:'numeric'})}</p><div class="due-grid" aria-hidden="true">${cells}</div><ul class="due-list">${list}</ul></div>`;
+  const toggle=box.querySelector('.due-toggle'),set=open=>{box.classList.toggle('closed',!open);toggle.setAttribute('aria-expanded',String(open));};
+  toggle.addEventListener('click',()=>set(box.classList.contains('closed')));
+  // Narrower screens start with just the "Next due" pill so the calendar does not cover the lesson.
+  set(!matchMedia('(max-width: 1199px)').matches);
+  document.body.appendChild(box);
+}
+renderCalendar();
+
+// Class lookup: course.json links.lookupSheet is the address of a restricted Google Sheet that lists each student's Sheet and notebook links.
+// Only that address is public. Google decides who can open it, so no student names or file links are ever in this page.
+function renderLookup(){
+  const url=COURSE.links.lookupSheet;if(!safe(url))return;
+  document.querySelector('header nav')?.insertAdjacentHTML('beforeend',link(url,'Sheet & notebook lookup'));
+  document.getElementById('personal-actions')?.insertAdjacentHTML('beforebegin',`<div class="lookup" id="lookup"><h3>Sheet &amp; notebook lookup</h3><p>Can’t find your links? Open the class lookup, find your name, then click your Sheet or your notebook. Sign in with your school Google account. Only our class and our teachers can open it.</p>${link(url,'Open the Sheet & notebook lookup','button')}</div>`);
+}
+renderLookup();
